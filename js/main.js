@@ -59,11 +59,11 @@ function expandirMenu() {
             menu.classList.remove('menu-principal-aberto');
         };
         remover(servicos, labelServiços, artigos, labelArtigos, duvidas, labelDuvidas);
-        imgMenu.src = "../img/menu.svg";
+        imgMenu.src = "./img/menu.svg";
     } else {
         menu.classList.add('menu-principal-aberto');
         setTimeout(() => {
-            imgMenu.src = "../img/fechar.svg";
+            imgMenu.src = "./img/fechar.svg";
         }, 400);
     }
 
