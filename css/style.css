@@ -287,6 +287,7 @@ li>input {
 .telefone-título {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     padding-bottom: 10px;
     border-bottom: 1px solid #cccccc;
@@ -295,9 +296,6 @@ li>input {
 .telefone-título h3 {
     font-family: izzo1-semibold;
     margin-left: 20px;
-    display: inline-flex;
-    flex-direction: row;
-    align-self: center;
     font-size: 16px;
 }
 
@@ -323,7 +321,6 @@ li>input {
 }
 
 .números p {
-    display: inline-flex;
     margin: 0 auto;
     margin-top: 15px;
 }
