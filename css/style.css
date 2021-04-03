@@ -298,7 +298,7 @@ li>input {
     display: inline-flex;
     flex-direction: row;
     align-self: center;
-    font-size: clamp(1rem, 5vw, 25px);
+    font-size: 16px;
 }
 
 .telefone-título>img {
@@ -338,7 +338,7 @@ li>input {
     text-decoration: none;
     cursor: pointer;
     margin-left: 10px;
-    font-size: clamp(1rem, 4vw, 22px);
+    font-size: 15px;
 }
 
 .fechar-info {
@@ -366,7 +366,7 @@ li>input {
     text-align: center;
     margin-top: 5px;
     font-style: normal;
-    font-size: clamp(1rem, 4vw, 22px);
+    font-size: 15px;
 }
 
 #endereco address p:first-child {
