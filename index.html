@@ -15,15 +15,15 @@
             <div class="links">
                 <div class="links-de-contato">
                     <label class="redondo">
-                    <input type="checkbox" name="dropmenu" onchange="afundar(this)" aria-label="botão-telefone">
+                    <input type="checkbox" id="input-tel" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-telefone">
                     <img src="./img/tel.svg" alt="">
                 </label>
                     <label class="redondo">
-                    <input type="checkbox" name="dropmenu" onchange="afundar(this)" aria-label="botão-email">
+                    <input type="checkbox" id="input-mail" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-email">
                     <img src="./img/mail.svg" alt="">
                 </label>
                     <label class="redondo">
-                    <input type="checkbox" name="dropmenu" onchange="afundar(this)" aria-label="botão-endereço">
+                    <input type="checkbox" id="input-endereco" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-endereço">
                     <img src="./img/pin.svg" alt="">
                 </label>
                 </div>
@@ -92,6 +92,56 @@
                 <li>Contato</li>
             </ul>
         </nav>
+        <div class="informações">
+            <div id="telefones" class="display-none">
+                <div class="telefone-título">
+                    <img src="./img/tel.svg" alt="Telefones do escritório e os advogados atendentes">
+                    <h3>Telefones</h3>
+                </div>
+                <div class="números">
+                    <p><img src="./img/telfixo.svg" alt=""><a href="tel:+552432010472">(24) 3201-0472</a></p>
+                    <p><img src="./img/whatsapp.svg" alt=""><a href="tel:+5524999944808">(24) 99994-4808</a></p>
+                    <p><img src="./img/whatsapp.svg" alt=""><a href="tel:+5524992795574">(24) 99279-5574</a></p>
+                </div>
+                <div class="linha fechar-info">
+                    <button class="btn-menu-mobile btn-fechar-info" onclick="fecharInformações()">
+                        <img src="/img/fechar.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div id="email" class="display-none">
+                <div class="telefone-título">
+                    <img src="./img/mail.svg" alt="Email geral do escritório de advocacia">
+                    <h3>E-mail</h3>
+                </div>
+                <div class="números">
+                    <p><a href="mailto:contato@izzoadv.com.br">contato@izzoadv.com.br</a></p>
+                </div>
+                <div class="linha fechar-info">
+                    <button class="btn-menu-mobile btn-fechar-info" onclick="fecharInformações()">
+                        <img src="/img/fechar.svg" alt="">
+                    </button>
+                </div>
+            </div>
+            <div id="endereco" class="display-none">
+                <div class="telefone-título">
+                    <img src="./img/pin.svg" alt="Endereço do esctirório de advocacia">
+                    <h3>Endereço</h3>
+                </div>
+                <div class="números">
+                    <address>
+                        <p>Rua Ana Neri - nº 126 - sala 213</p>
+                        <p>Centro</p>
+                        <p>Barra do Piraí - RJ</p>
+                        <p>CEP 27123-150</p>
+                    </address>
+                </div>
+                <div class="linha fechar-info">
+                    <button class="btn-menu-mobile btn-fechar-info" onclick="fecharInformações()">
+                        <img src="/img/fechar.svg" alt="">
+                    </button>
+                </div>
+            </div>
     </header>
 
 

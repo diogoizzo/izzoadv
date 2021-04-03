@@ -23,10 +23,27 @@
 
 body {
     background-color: rgb(217, 217, 217);
+    min-width: 300px;
+    width: 100%;
+}
+
+.linha {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .links-social-contato {
-    z-index: 10;
+    z-index: 999;
     display: block;
     padding-bottom: 5px;
     border-style: solid;
@@ -140,17 +157,17 @@ header input {
 
 nav {
     display: flex;
-    z-index: -1;
+    z-index: 10;
     background-color: none;
     margin-top: -10px;
     justify-content: center;
     max-height: 0;
     overflow: hidden;
     transition: max-height 1s ease-out;
-    -webkit-transition: max-height 1.5s ease-out;
-    -moz-transition: max-height 1.5s ease-out;
-    -ms-transition: max-height 1.5s ease-out;
-    -o-transition: max-height 1.5s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    -moz-transition: max-height 1s ease-out;
+    -ms-transition: max-height 1s ease-out;
+    -o-transition: max-height 1s ease-out;
 }
 
 .menu-principal-aberto {
@@ -251,4 +268,126 @@ li>label {
 li>input {
     display: block;
     width: 100%;
+}
+
+.informações {
+    display: block;
+    z-index: 10;
+    margin-top: 20px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    -webkit-transition: max-height 1s ease-out;
+    -moz-transition: max-height 1s ease-out;
+    -ms-transition: max-height 1s ease-out;
+    -o-transition: max-height 1s ease-out;
+}
+
+.telefone-título {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #cccccc;
+}
+
+.telefone-título h3 {
+    font-family: izzo1-semibold;
+    margin-left: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    align-self: center;
+    font-size: clamp(1rem, 5vw, 25px);
+}
+
+.telefone-título>img {
+    width: 7vw;
+    max-width: 44px;
+    min-width: 30px;
+}
+
+.números p img {
+    fill: #818181;
+    width: 6vw;
+    min-width: 24px;
+    max-width: 32px;
+}
+
+.números {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 228, 228)
+}
+
+.números p {
+    display: inline-flex;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.números p:last-child {
+    margin-bottom: 15px;
+}
+
+.números p a {
+    display: inline-flex;
+    align-self: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: clamp(1rem, 4vw, 22px);
+}
+
+.fechar-info {
+    border-top: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0 0 10px 10px;
+    padding: 15px 0;
+    -webkit-border-radius: 0 0 10px 10px;
+    -moz-border-radius: 0 0 10px 10px;
+    -ms-border-radius: 0 0 10px 10px;
+    -o-border-radius: 0 0 10px 10px;
+    box-shadow: 0px 4px 4.7px 0.3px rgba(80, 79, 79, 0.1);
+}
+
+.btn-fechar-info:active {
+    box-shadow: 3.277px 2.294px 3.92px 0.08px rgba(0, 0, 0, 0.09), -2.828px -2.828px 3.92px 0.08px rgba(255, 253, 253, 0.4), inset 3.277px 2.294px 3.92px 0.08px rgba(0, 0, 0, 0.09), inset -2.828px -2.828px 3.92px 0.08px rgba(255, 255, 255, 0.4);
+}
+
+.btn-fechar-info:focus {
+    outline: none;
+}
+
+#endereco address p {
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+    font-style: normal;
+    font-size: clamp(1rem, 4vw, 22px);
+}
+
+#endereco address p:first-child {
+    margin-top: 15px;
+}
+
+.informacoes-aberto {
+    max-height: 300px;
+    transition: max-height 1.5s ease-out;
+    -webkit-transition: max-height 1.5s ease-out;
+    -moz-transition: max-height 1.5s ease-out;
+    -ms-transition: max-height 1.5s ease-out;
+    -o-transition: max-height 1.5s ease-out;
+}
+
+#email,
+#telefones,
+#endereco {
+    margin-bottom: 10px;
+}
+
+.display-none {
+    display: none;
 }

@@ -10,6 +10,14 @@ const labelArtigos = document.querySelector('#label-artigos');
 const labelDuvidas = document.querySelector('#label-duvidas');
 const menu = document.querySelector('nav');
 const imgMenu = document.querySelector('#img-menu');
+const informacoes = document.querySelector('.informações');
+const inputTel = document.querySelector('#input-tel');
+const inputMail = document.querySelector('#input-mail');
+const inputEndereço = document.querySelector('#input-endereco');
+const janelaTel = document.querySelector("#telefones");
+const janelaMail = document.querySelector("#email");
+const janelaEndereço = document.querySelector("#endereco");
+const btnMenu = document.querySelector('.btn-menu-mobile');
 //Fim da captura de Dom
 //menu
 function remover(obj1, label1, obj2, label2, obj3, label3) {
@@ -23,8 +31,26 @@ function remover(obj1, label1, obj2, label2, obj3, label3) {
     }
 }
 
+function verificaInfoAberta() {
+    if (!janelaMail.classList.contains('display-none')) return inputMail;
+    if (!janelaEndereço.classList.contains('display-none')) return inputEndereço;
+    if (!janelaTel.classList.contains('display-none')) return inputTel;
+}
+
 function afundar(obj) {
     obj.parentElement.classList.toggle('btn-apertado');
+}
+
+function recolherMenu() {
+    if (servicos.classList.contains('menu-aberto') || artigos.classList.contains('menu-aberto') || duvidas.classList.contains('menu-aberto')) {
+        setTimeout(() => {
+            menu.classList.remove('menu-principal-aberto');
+        }, 400);
+    } else {
+        menu.classList.remove('menu-principal-aberto');
+    };
+    remover(servicos, labelServiços, artigos, labelArtigos, duvidas, labelDuvidas);
+    imgMenu.src = "./img/menu.svg";
 }
 
 function expandir(obj) {
@@ -51,21 +77,94 @@ function expandir(obj) {
 
 function expandirMenu() {
     if (menu.classList.contains('menu-principal-aberto')) {
-        if (servicos.classList.contains('menu-aberto') || artigos.classList.contains('menu-aberto') || duvidas.classList.contains('menu-aberto')) {
+        recolherMenu();
+    } else if (informacoes.classList.contains('informacoes-aberto')) {
+        const itemAberto = verificaInfoAberta();
+        itemAberto.parentElement.classList.remove('btn-apertado');
+        const esperarRecolherInfo = () => new Promise((resolve, reject) => {
+            informacoes.classList.remove('informacoes-aberto');
             setTimeout(() => {
-                menu.classList.remove('menu-principal-aberto');
-            }, 400);
-        } else {
-            menu.classList.remove('menu-principal-aberto');
-        };
-        remover(servicos, labelServiços, artigos, labelArtigos, duvidas, labelDuvidas);
-        imgMenu.src = "./img/menu.svg";
+                resolve();
+            }, 1300);
+        });
+        esperarRecolherInfo().then(() => {
+            menu.classList.add('menu-principal-aberto');
+            imgMenu.src = "./img/fechar.svg";
+        });
     } else {
         menu.classList.add('menu-principal-aberto');
-        setTimeout(() => {
-            imgMenu.src = "./img/fechar.svg";
-        }, 400);
+        imgMenu.src = "./img/fechar.svg";
     }
+}
 
+function alternaInfo(obj) {
+    switch (obj) {
+        case inputTel:
+            janelaMail.classList.add('display-none');
+            inputMail.checked = false;
+            inputMail.parentElement.classList.remove('btn-apertado');
+            janelaEndereço.classList.add('display-none');
+            inputEndereço.checked = false;
+            inputEndereço.parentElement.classList.remove('btn-apertado');
+            janelaTel.classList.remove('display-none');
+            break;
+        case inputMail:
+            janelaMail.classList.remove('display-none');
+            janelaEndereço.classList.add('display-none');
+            inputEndereço.checked = false;
+            inputEndereço.parentElement.classList.remove('btn-apertado');
+            janelaTel.classList.add('display-none');
+            inputTel.checked = false;
+            inputTel.parentElement.classList.remove('btn-apertado');
+            break;
+        case inputEndereço:
+            janelaMail.classList.add('display-none');
+            inputMail.checked = false;
+            inputMail.parentElement.classList.remove('btn-apertado');
+            janelaEndereço.classList.remove('display-none');
+            janelaTel.classList.add('display-none');
+            inputTel.checked = false;
+            inputTel.parentElement.classList.remove('btn-apertado');
+            break;
+    }
+}
+
+function expandirInfo(obj) {
+    if (menu.classList.contains('menu-principal-aberto')) {
+        const esperaRecolherMenu = (obj) => new Promise((resolve, reject) => {
+            recolherMenu();
+            btnMenu.classList.remove('btn-apertado');
+            setTimeout(() => {
+                imgMenu.src = "./img/menu.svg";
+                resolve(obj);
+            }, 1450);
+        })
+        esperaRecolherMenu(obj).then((obj) => {
+            alternaInfo(obj);
+            informacoes.classList.toggle('informacoes-aberto');
+        });
+    } else if (informacoes.classList.contains('informacoes-aberto')) {
+        const itemAberto = verificaInfoAberta();
+        itemAberto.parentElement.classList.remove('btn-apertado');
+        if (obj !== itemAberto) {
+            informacoes.classList.remove('informacoes-aberto');
+            setTimeout(() => {
+                alternaInfo(obj);
+                informacoes.classList.add('informacoes-aberto');
+            }, 1200);
+        } else {
+            informacoes.classList.remove('informacoes-aberto');
+            obj.parentElement.classList.remove('btn-apertado');
+        }
+    } else {
+        alternaInfo(obj);
+        informacoes.classList.add('informacoes-aberto');
+    }
+}
+
+function fecharInformações() {
+    informacoes.classList.remove('informacoes-aberto');
+    const itemAberto = verificaInfoAberta();
+    itemAberto.parentElement.classList.remove('btn-apertado');
 }
 //Fim - menu
