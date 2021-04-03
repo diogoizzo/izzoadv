@@ -374,7 +374,7 @@ li>input {
 }
 
 .informacoes-aberto {
-    max-height: 300px;
+    max-height: 350px;
     transition: max-height 1.5s ease-out;
     -webkit-transition: max-height 1.5s ease-out;
     -moz-transition: max-height 1.5s ease-out;
