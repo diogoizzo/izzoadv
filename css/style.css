@@ -300,15 +300,13 @@ li>input {
 }
 
 .telefone-título>img {
-    width: 7vw;
-    max-width: 44px;
-    min-width: 30px;
+    width: 25px;
 }
 
 .números p img {
-    fill: #818181;
-    width: 6vw;
-    min-width: 24px;
+    display: inline-flex;
+    width: 20px;
+    align-self: center;
     max-width: 32px;
 }
 
@@ -321,6 +319,8 @@ li>input {
 }
 
 .números p {
+    display: inline-flex;
+    align-items: center;
     margin: 0 auto;
     margin-top: 15px;
 }
@@ -330,8 +330,6 @@ li>input {
 }
 
 .números p a {
-    display: inline-flex;
-    align-self: center;
     text-decoration: none;
     cursor: pointer;
     margin-left: 10px;
