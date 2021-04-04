@@ -38,9 +38,11 @@ body {
 
 .coluna {
     display: flex;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    text-align: center;
 }
 
 .links-social-contato {
@@ -259,6 +261,12 @@ nav ul li {
     -o-transition: max-height .7s linear;
 }
 
+.serviços>li,
+.artigos>li,
+.duvidas>li {
+    border-bottom: 1px solid #cccccc;
+}
+
 .menu-aberto {
     max-height: 250px;
     transition: max-height 0.7s linear;
@@ -415,6 +423,62 @@ button:focus {
     flex-direction: row;
     background-color: aqua;
     width: 100%;
-    height: calc(100vh - 69px);
     margin-top: -20px;
+}
+
+.slider img {
+    width: 100%;
+    object-fit: contain;
+    max-height: 80vh;
+}
+
+main h1 {
+    display: none;
+}
+
+.slider h2 {
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+    font-size: 7vw;
+    font-family: izzo1-semibold, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+.slider h2:nth-child(3) {
+    margin-top: 40%;
+    font-size: 6vw;
+    font-family: izzo1-regular, sans-serif;
+    font-weight: 100;
+}
+
+#btn-principais-serviços {
+    color: rgb(217, 217, 217);
+    padding: 3px 15px;
+    font-family: izzo1-regular, sans-serif;
+    font-size: 2.8vw;
+    background-color: rgb(113, 24, 23);
+    box-shadow: 3.277px 2.294px 3.92px 0.08px rgba(0, 0, 0, 0.7), -2.828px -2.828px 3.92px 0.08px rgba(255, 253, 253, 0.4);
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+#alinhar-botão {
+    position: absolute;
+    margin-top: 55%;
+}
+
+.box-serviço {
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    height: 90px;
+    background-color: lightcoral;
 }
