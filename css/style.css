@@ -125,7 +125,7 @@ body {
 }
 
 .menu {
-    font-family: izzo1-regular;
+    font-family: izzo1-regular, sans-serif;
     display: flex;
     justify-content: center;
     margin-top: 8px;
@@ -156,7 +156,7 @@ header input {
 }
 
 nav {
-    font-family: izzo1-regular;
+    font-family: izzo1-regular, sans-serif;
     display: flex;
     z-index: 10;
     background-color: none;
@@ -164,20 +164,20 @@ nav {
     justify-content: center;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 1s ease-out;
-    -webkit-transition: max-height 1s ease-out;
-    -moz-transition: max-height 1s ease-out;
-    -ms-transition: max-height 1s ease-out;
-    -o-transition: max-height 1s ease-out;
+    transition: max-height 1s linear;
+    -webkit-transition: max-height 1s linear;
+    -moz-transition: max-height 1s linear;
+    -ms-transition: max-height 1s linear;
+    -o-transition: max-height 1s linear;
 }
 
 .menu-principal-aberto {
-    max-height: 500px;
-    transition: max-height 1.5s ease-out;
-    -webkit-transition: max-height 1.5s ease-out;
-    -moz-transition: max-height 1.5s ease-out;
-    -ms-transition: max-height 1.5s ease-out;
-    -o-transition: max-height 1.5s ease-out;
+    max-height: 700px;
+    transition: max-height 1.5s linear;
+    -webkit-transition: max-height 1.5s linear;
+    -moz-transition: max-height 1.5s linear;
+    -ms-transition: max-height 1.5s linear;
+    -o-transition: max-height 1.5s linear;
 }
 
 .menu-items {
@@ -190,7 +190,7 @@ nav>ul {
 }
 
 nav li {
-    line-height: 30px;
+    line-height: 35px;
     width: 100%;
     border-bottom: 1px solid #cccccc;
 }
@@ -230,40 +230,40 @@ nav ul li {
     background-color: rgb(228, 228, 228);
     max-height: 0;
     overflow: hidden;
-    transition: max-height .7s ease-out;
-    -webkit-transition: max-height .7s ease-out;
-    -moz-transition: max-height .7s ease-out;
-    -ms-transition: max-height .7s ease-out;
-    -o-transition: max-height .7s ease-out;
+    transition: max-height .7s linear;
+    -webkit-transition: max-height .7s linear;
+    -moz-transition: max-height .7s linear;
+    -ms-transition: max-height .7s linear;
+    -o-transition: max-height .7s linear;
 }
 
 .menu-aberto {
     max-height: 250px;
-    transition: max-height 0.7s ease-in;
-    -webkit-transition: max-height 0.7s ease-in;
-    -moz-transition: max-height 0.7s ease-in;
-    -ms-transition: max-height 0.7s ease-in;
-    -o-transition: max-height 0.7s ease-in;
+    transition: max-height 0.7s linear;
+    -webkit-transition: max-height 0.7s linear;
+    -moz-transition: max-height 0.7s linear;
+    -ms-transition: max-height 0.7s linear;
+    -o-transition: max-height 0.7s linear;
 }
 
 .menu-item-ativo {
-    transition: background-color 0.2 linear 0.7s;
+    transition: background-color 0.2 ease-out;
     background-color: rgb(190, 190, 190);
-    -webkit-transition: background-color 0.2 linear 0.7s;
-    -moz-transition: background-color 0.2 linear 0.7s;
-    -ms-transition: background-color 0.2 linear 0.7s;
-    -o-transition: background-color 0.2 linear 0.7s;
+    -webkit-transition: background-color 0.2 ease-out;
+    -moz-transition: background-color 0.2 ease-out;
+    -ms-transition: background-color 0.2 ease-out;
+    -o-transition: background-color 0.2 ease-out;
 }
 
 li>label {
     display: inline-block;
     width: 100%;
     background-color: rgb(217, 217, 217);
-    transition: background-color 0.3s ease-in 0.3s;
-    -webkit-transition: background-color 0.3s ease-in 0.3s;
-    -moz-transition: background-color 0.3s ease-in 0.3s;
-    -ms-transition: background-color 0.3s ease-in 0.3s;
-    -o-transition: background-color 0.3s ease-in 0.3s;
+    transition: background-color 0.3s ease-out;
+    -webkit-transition: background-color 0.3s ease-out;
+    -moz-transition: background-color 0.3s ease-out;
+    -ms-transition: background-color 0.3s ease-out;
+    -o-transition: background-color 0.3s ease-out;
 }
 
 li>input {
