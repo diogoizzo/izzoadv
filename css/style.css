@@ -25,6 +25,7 @@ body {
     background-color: rgb(217, 217, 217);
     min-width: 300px;
     width: 100%;
+    height: 100%;
 }
 
 .linha {
@@ -43,8 +44,12 @@ body {
 }
 
 .links-social-contato {
+    position: relative;
     z-index: 999;
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(217, 217, 217);
     padding-bottom: 5px;
     border-style: solid;
     border-width: 1px;
@@ -125,6 +130,7 @@ body {
 }
 
 .menu {
+    background-color: rgb(217, 217, 217);
     font-family: izzo1-regular, sans-serif;
     display: flex;
     justify-content: center;
@@ -145,6 +151,12 @@ body {
 
 .btn-menu-mobile>img {
     height: 80%;
+}
+
+header {
+    max-height: 89px;
+    z-index: 999;
+    background-color: rgb(217, 217, 217);
 }
 
 header input {
@@ -172,6 +184,7 @@ nav {
 }
 
 .menu-principal-aberto {
+    background-color: rgb(217, 217, 217);
     max-height: 700px;
     transition: max-height 1.5s linear;
     -webkit-transition: max-height 1.5s linear;
@@ -181,18 +194,28 @@ nav {
 }
 
 .menu-items {
+    background-color: initial;
+    z-index: 8;
     width: 100%;
     cursor: default;
 }
 
 nav>ul {
-    margin-top: 15px;
+    background-color: rgb(217, 217, 217);
+    z-index: 1;
+    padding-top: 10px;
 }
 
-nav li {
+nav>ul>li {
+    background-color: rgb(217, 217, 217);
     line-height: 35px;
     width: 100%;
     border-bottom: 1px solid #cccccc;
+}
+
+nav ul li:first-child {
+    margin-top: -10px;
+    padding-top: 12px;
 }
 
 .serviços>li:last-child,
@@ -219,7 +242,6 @@ nav>ul>li:last-child {
 
 nav ul,
 nav ul li {
-    background-color: none;
     list-style-type: none;
     text-align: center;
 }
@@ -272,9 +294,9 @@ li>input {
 }
 
 .informações {
-    display: block;
+    display: inline-flex;
+    flex-direction: column;
     z-index: 10;
-    margin-top: 20px;
     width: 100%;
     max-height: 0;
     overflow: hidden;
@@ -286,6 +308,8 @@ li>input {
 }
 
 .telefone-título {
+    background-color: rgb(217, 217, 217);
+    padding-top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -339,6 +363,7 @@ li>input {
 }
 
 .fechar-info {
+    background-color: rgb(217, 217, 217);
     border-top: 1px solid #cccccc;
     border-bottom: 1px solid #cccccc;
     border-radius: 0 0 10px 10px;
@@ -383,4 +408,13 @@ button:focus {
 
 .display-none {
     display: none;
+}
+
+.slider {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    width: 100%;
+    height: calc(100vh - 69px);
+    margin-top: -20px;
 }

@@ -18,6 +18,8 @@ const janelaTel = document.querySelector("#telefones");
 const janelaMail = document.querySelector("#email");
 const janelaEndereço = document.querySelector("#endereco");
 const btnMenu = document.querySelector('.btn-menu-mobile');
+const header = document.querySelector('header');
+const slider = document.querySelector('.slider');
 //Fim da captura de Dom
 //menu
 function remover(obj1, label1, obj2, label2, obj3, label3) {
@@ -185,3 +187,4 @@ function fecharInformações(obj) {
     }, 180);
 }
 //Fim - menu
+//Inicio Slider
