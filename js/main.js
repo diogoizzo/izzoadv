@@ -54,24 +54,37 @@ function recolherMenu() {
 }
 
 function expandir(obj) {
+    if (!servicos.classList.contains('menu-aberto') && !artigos.classList.contains('menu-aberto') && !duvidas.classList.contains('menu-aberto')) {
+        if (obj === inputServiços) {
+            labelServiços.classList.toggle('menu-item-ativo');
+            servicos.classList.toggle('menu-aberto');
+        } else if (obj === inputArtigos) {
+            labelArtigos.classList.toggle('menu-item-ativo');
+            artigos.classList.toggle('menu-aberto');
+        } else if (obj === inputDuvidas) {
+            labelDuvidas.classList.toggle('menu-item-ativo');
+            duvidas.classList.toggle('menu-aberto');
+        }
+        return;
+    }
     if (obj === inputServiços) {
         remover(artigos, labelArtigos, duvidas, labelDuvidas);
         setTimeout(() => {
             labelServiços.classList.toggle('menu-item-ativo');
             servicos.classList.toggle('menu-aberto');
-        }, 650);
+        }, 700);
     } else if (obj === inputArtigos) {
         remover(servicos, labelServiços, duvidas, labelDuvidas);
         setTimeout(() => {
             labelArtigos.classList.toggle('menu-item-ativo');
             artigos.classList.toggle('menu-aberto');
-        }, 650);
+        }, 700);
     } else if (obj === inputDuvidas) {
         remover(servicos, labelServiços, artigos, labelArtigos);
         setTimeout(() => {
             labelDuvidas.classList.toggle('menu-item-ativo');
             duvidas.classList.toggle('menu-aberto');
-        }, 650);
+        }, 700);
     }
 }
 
