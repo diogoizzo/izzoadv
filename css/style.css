@@ -28,6 +28,12 @@ body {
     height: 100%;
 }
 
+h2 {
+    font-family: izzo1-semibold;
+    font-size: 6vw;
+    font-weight: 200;
+}
+
 .linha {
     display: flex;
     flex-direction: row;
@@ -304,7 +310,7 @@ li>input {
 .informações {
     display: inline-flex;
     flex-direction: column;
-    z-index: 10;
+    z-index: 999;
     width: 100%;
     max-height: 0;
     overflow: hidden;
@@ -429,7 +435,6 @@ button:focus {
 .slider img {
     width: 100%;
     object-fit: contain;
-    max-height: 80vh;
 }
 
 main h1 {
@@ -440,7 +445,7 @@ main h1 {
     position: absolute;
     width: 100%;
     margin-top: 30%;
-    font-size: 7vw;
+    font-size: 6vw;
     font-family: izzo1-semibold, sans-serif;
     color: rgb(255, 255, 255);
     font-weight: bold;
@@ -450,7 +455,7 @@ main h1 {
 
 .slider h2:nth-child(3) {
     margin-top: 40%;
-    font-size: 6vw;
+    font-size: 5vw;
     font-family: izzo1-regular, sans-serif;
     font-weight: 100;
 }
@@ -477,8 +482,28 @@ main h1 {
 
 .box-serviço {
     display: inline-block;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
-    height: 90px;
+    margin-top: 7.5%;
+    height: 200px;
+    padding: 4%;
     background-color: lightcoral;
+    border-radius: 22px;
+    background-color: rgb(217, 217, 217);
+    box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
+}
+
+.box-serviço>img {
+    width: 15%;
+}
+
+.divisor {
+    margin-top: 4%;
+    height: 1px;
+    background-color: rgb(217, 217, 217);
+    box-shadow: 3.277px 2.294px 4.55px 0.45px rgba(0, 0, 0, 0.1), -2.828px -2.828px 1.82px 0.18px rgba(255, 255, 255, 0.35);
+}
+
+.box-serviço>h2 {
+    margin-top: 3%;
 }
