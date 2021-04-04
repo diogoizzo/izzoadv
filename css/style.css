@@ -308,9 +308,10 @@ li>input {
 }
 
 .informações {
+    position: relative;
     display: inline-flex;
     flex-direction: column;
-    z-index: 999;
+    z-index: 3;
     width: 100%;
     max-height: 0;
     overflow: hidden;
