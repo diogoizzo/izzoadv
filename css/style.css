@@ -513,6 +513,7 @@ main h1 {
 .box-serviço>p {
     font-family: izzo2-regular, serif;
     display: inline-block;
+    margin-bottom: 4%;
     margin-top: 6%;
     font-size: max(4vw, 16px);
     line-height: 22px;
