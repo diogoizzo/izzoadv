@@ -30,8 +30,8 @@ body {
 
 h2 {
     font-family: izzo1-semibold;
-    font-size: 6vw;
-    font-weight: 200;
+    font-size: max(6vw, 20px);
+    font-weight: 400;
 }
 
 .linha {
@@ -487,7 +487,6 @@ main h1 {
     width: 85%;
     margin: 0 auto;
     margin-top: 7.5%;
-    height: 200px;
     padding: 4%;
     background-color: lightcoral;
     border-radius: 22px;
@@ -496,11 +495,11 @@ main h1 {
 }
 
 .box-serviço>img {
+    margin-top: 4%;
     width: 15%;
 }
 
 .divisor {
-    margin-top: 4%;
     height: 1px;
     background-color: rgb(217, 217, 217);
     box-shadow: 3.277px 2.294px 4.55px 0.45px rgba(0, 0, 0, 0.1), -2.828px -2.828px 1.82px 0.18px rgba(255, 255, 255, 0.35);
@@ -508,4 +507,13 @@ main h1 {
 
 .box-serviço>h2 {
     margin-top: 3%;
+    margin-bottom: 6%;
+}
+
+.box-serviço>p {
+    font-family: izzo2-regular, serif;
+    margin-top: 6%;
+    font-size: max(4vw, 16px);
+    line-height: 22px;
+    padding: 0 2%;
 }
