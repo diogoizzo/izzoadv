@@ -162,9 +162,13 @@ function expandirInfo(obj) {
     }
 }
 
-function fecharInformações() {
+function fecharInformações(obj) {
+    obj.classList.add('btn-apertado');
     informacoes.classList.remove('informacoes-aberto');
     const itemAberto = verificaInfoAberta();
     itemAberto.parentElement.classList.remove('btn-apertado');
+    setTimeout(() => {
+        obj.classList.remove("btn-apertado");
+    }, 180);
 }
 //Fim - menu

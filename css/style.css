@@ -1,23 +1,23 @@
 @font-face {
     font-family: izzo1-regular;
-    src: url('/font/Poppins-Regular.ttf');
+    src: url('../font/Poppins-Regular.ttf');
 }
 
 @font-face {
     font-family: izzo1-semibold;
-    src: url('/font/Poppins-SemiBold.ttf');
+    src: url('../font/Poppins-SemiBold.ttf');
 }
 
 @font-face {
     font-family: izzo2-regular;
-    src: url('/font/roboto-slab-regular.ttf');
+    src: url('../font/roboto-slab-regular.ttf');
 }
 
 * {
+    font-family: izzo1-regular;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: poppins;
     color: #818181;
 }
 
@@ -156,6 +156,7 @@ header input {
 }
 
 nav {
+    font-family: izzo1-regular;
     display: flex;
     z-index: 10;
     background-color: none;
@@ -305,12 +306,13 @@ li>input {
 
 .números p img {
     display: inline-flex;
-    width: 20px;
+    width: 22px;
     align-self: center;
     max-width: 32px;
 }
 
 .números {
+    font-family: izzo1-regular;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,11 +350,7 @@ li>input {
     box-shadow: 0px 4px 4.7px 0.3px rgba(80, 79, 79, 0.1);
 }
 
-.btn-fechar-info:active {
-    box-shadow: 3.277px 2.294px 3.92px 0.08px rgba(0, 0, 0, 0.09), -2.828px -2.828px 3.92px 0.08px rgba(255, 253, 253, 0.4), inset 3.277px 2.294px 3.92px 0.08px rgba(0, 0, 0, 0.09), inset -2.828px -2.828px 3.92px 0.08px rgba(255, 255, 255, 0.4);
-}
-
-.btn-fechar-info:focus {
+button:focus {
     outline: none;
 }
 
