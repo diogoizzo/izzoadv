@@ -13,137 +13,140 @@
 
 <body>
     <header>
-        <div class="links-social-contato">
-            <div class="links">
-                <div class="links-de-contato">
-                    <label class="redondo">
-                    <input type="checkbox" id="input-tel" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-telefone">
-                    <img src="./img/tel.svg" alt="">
-                </label>
-                    <label class="redondo">
-                    <input type="checkbox" id="input-mail" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-email">
-                    <img src="./img/mail.svg" alt="">
-                </label>
-                    <label class="redondo">
-                    <input type="checkbox" id="input-endereco" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-endereço">
-                    <img src="./img/pin.svg" alt="">
-                </label>
+        <div class="menu-fixo">
+            <div class="links-social-contato">
+                <div class="links">
+                    <div class="links-de-contato">
+                        <label class="redondo">
+                        <input type="checkbox" id="input-tel" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-telefone">
+                        <img src="./img/tel.svg" alt="">
+                    </label>
+                        <label class="redondo">
+                        <input type="checkbox" id="input-mail" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-email">
+                        <img src="./img/mail.svg" alt="">
+                    </label>
+                        <label class="redondo">
+                        <input type="checkbox" id="input-endereco" name="dropmenu" onchange="afundar(this); expandirInfo(this);" aria-label="botão-endereço">
+                        <img src="./img/pin.svg" alt="">
+                    </label>
+                    </div>
+                    <div class="logo">
+                        <img src="./img/Logo.svg" alt="Logo izzo advocacia e consultoria" class="logo">
+                    </div>
+                    <div class="links-de-redes-sociais">
+                        <button class="redondo"><img src="./img/facebook.svg" alt="icone-facebook" class="icone-botao-redondo"></button>
+                        <button class="redondo"><img src="./img/instagram.svg" alt="icone-facebook" class="icone-botao-redondo"></button>
+                        <button class="redondo"><img src="./img/youtube.svg" alt="icone-facebook" class="icone-botao-redondo"></button>
+                    </div>
                 </div>
-                <div class="logo">
-                    <img src="./img/Logo.svg" alt="Logo izzo advocacia e consultoria" class="logo">
-                </div>
-                <div class="links-de-redes-sociais">
-                    <button class="redondo"><img src="./img/facebook.svg" alt="icone-facebook" class="icone-botao-redondo"></button>
-                    <button class="redondo"><img src="./img/instagram.svg" alt="icone-facebook" class="icone-botao-redondo"></button>
-                    <button class="redondo"><img src="./img/youtube.svg" alt="icone-facebook" class="icone-botao-redondo"></button>
+                <div class="menu">
+                    <label class="btn-menu-mobile">
+                    <input type="checkbox" name="dropmenu" onchange="afundar(this);expandirMenu()" aria-label="botão-dropdown-menu-mobile">
+                    <img id="img-menu" src="./img/menu.svg" alt="">
+                </label>
                 </div>
             </div>
-            <div class="menu">
-                <label class="btn-menu-mobile">
-                <input type="checkbox" name="dropmenu" onchange="afundar(this);expandirMenu()" aria-label="botão-dropdown-menu-mobile">
-                <img id="img-menu" src="./img/menu.svg" alt="">
-            </label>
-            </div>
-        </div>
-        <nav>
-            <ul class="menu-items">
-                <li>Home</li>
-                <li>Quem somos</li>
-                <li>
-                    <label id="label-serviços">
-                        Serviços
-                        <input type="checkbox" id="input-serviços" onchange="expandir(this)" aria-label="Principais serviços de advocacia">
-                    </label>
-                    <ul class="serviços">
-                        <li>Divórcio</li>
-                        <li>Inventário</li>
-                        <li>Usucapião</li>
-                        <li>Contratos</li>
-                        <li>Família</li>
-                        <li>Consumidor</li>
-                    </ul>
-                </li>
-                <li>
-                    <label id="label-artigos">
-                        Artigos
-                        <input type="checkbox" id="input-artigos" onchange="expandir(this)" aria-label="Artigos sobre advocacia extrajudicia, divórcio, usucapião, contratos, direito de família e direitos do consumidor">
-                    </label>
-                    <ul class="artigos">
-                        <li>Divórcio</li>
-                        <li>Inventário</li>
-                        <li>Usucapião</li>
-                        <li>Contratos</li>
-                        <li>Família</li>
-                        <li>Consumidor</li>
-                        <li>Todos</li>
-                    </ul>
-                </li>
-                <li>
-                    <label id="label-duvidas">
-                        Dúvidas
-                        <input type="checkbox" id="input-duvidas" onchange="expandir(this)" aria-label="Artigos sobre advocacia extrajudicia, divórcio, usucapião, contratos, direito de família e direitos do consumidor">
-                    </label>
-                    <ul class="duvidas">
-                        <li>Divórcio</li>
-                        <li>Inventário</li>
-                        <li>Usucapião</li>
-                        <li>Contratos</li>
-                        <li>Todos</li>
-                    </ul>
-                </li>
-                <li>Contato</li>
-            </ul>
-        </nav>
-        <div class="informações">
-            <div id="telefones" class="display-none">
-                <div class="telefone-título">
-                    <img src="./img/tel.svg" alt="Telefones do escritório e os advogados atendentes">
-                    <h3>Telefones</h3>
+            <nav>
+                <ul class="menu-items">
+                    <li>Home</li>
+                    <li>Quem somos</li>
+                    <li>
+                        <label id="label-serviços">
+                            Serviços
+                            <input type="checkbox" id="input-serviços" onchange="expandir(this)" aria-label="Principais serviços de advocacia">
+                        </label>
+                        <ul class="serviços">
+                            <li>Divórcio</li>
+                            <li>Inventário</li>
+                            <li>Usucapião</li>
+                            <li>Contratos</li>
+                            <li>Família</li>
+                            <li>Consumidor</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label id="label-artigos">
+                            Artigos
+                            <input type="checkbox" id="input-artigos" onchange="expandir(this)" aria-label="Artigos sobre advocacia extrajudicia, divórcio, usucapião, contratos, direito de família e direitos do consumidor">
+                        </label>
+                        <ul class="artigos">
+                            <li>Divórcio</li>
+                            <li>Inventário</li>
+                            <li>Usucapião</li>
+                            <li>Contratos</li>
+                            <li>Família</li>
+                            <li>Consumidor</li>
+                            <li>Todos</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <label id="label-duvidas">
+                            Dúvidas
+                            <input type="checkbox" id="input-duvidas" onchange="expandir(this)" aria-label="Artigos sobre advocacia extrajudicia, divórcio, usucapião, contratos, direito de família e direitos do consumidor">
+                        </label>
+                        <ul class="duvidas">
+                            <li>Divórcio</li>
+                            <li>Inventário</li>
+                            <li>Usucapião</li>
+                            <li>Contratos</li>
+                            <li>Todos</li>
+                        </ul>
+                    </li>
+                    <li>Contato</li>
+                </ul>
+            </nav>
+            <div class="informações">
+                <div id="telefones" class="display-none">
+                    <div class="telefone-título">
+                        <img src="./img/tel.svg" alt="Telefones do escritório e os advogados atendentes">
+                        <h3>Telefones</h3>
+                    </div>
+                    <div class="números">
+                        <p><img src="./img/telfixo.svg" alt=""><a href="tel:+552432010472">(24) 3201-0472</a></p>
+                        <p><img src="./img/whatsapp.svg" alt=""><a href="tel:+5524999944808">(24) 99994-4808</a></p>
+                        <p><img src="./img/whatsapp.svg" alt=""><a href="tel:+5524992795574">(24) 99279-5574</a></p>
+                    </div>
+                    <div class="linha fechar-info">
+                        <button class="btn-menu-mobile" onclick="fecharInformações(this)">
+                            <img src="./img/fechar.svg" alt="">
+                        </button>
+                    </div>
                 </div>
-                <div class="números">
-                    <p><img src="./img/telfixo.svg" alt=""><a href="tel:+552432010472">(24) 3201-0472</a></p>
-                    <p><img src="./img/whatsapp.svg" alt=""><a href="tel:+5524999944808">(24) 99994-4808</a></p>
-                    <p><img src="./img/whatsapp.svg" alt=""><a href="tel:+5524992795574">(24) 99279-5574</a></p>
+                <div id="email" class="display-none">
+                    <div class="telefone-título">
+                        <img src="./img/mail.svg" alt="Email geral do escritório de advocacia">
+                        <h3>E-mail</h3>
+                    </div>
+                    <div class="números">
+                        <p><a href="mailto:contato@izzoadv.com.br">contato@izzoadv.com.br</a></p>
+                    </div>
+                    <div class="linha fechar-info">
+                        <button class="btn-menu-mobile" onclick="fecharInformações(this)">
+                            <img src="./img/fechar.svg" alt="">
+                        </button>
+                    </div>
                 </div>
-                <div class="linha fechar-info">
-                    <button class="btn-menu-mobile" onclick="fecharInformações(this)">
+                <div id="endereco" class="display-none">
+                    <div class="telefone-título">
+                        <img src="./img/pin.svg" alt="Endereço do esctirório de advocacia">
+                        <h3>Endereço</h3>
+                    </div>
+                    <div class="números">
+                        <address>
+                            <p>Rua Ana Neri - nº 126 - sala 213</p>
+                            <p>Centro</p>
+                            <p>Barra do Piraí - RJ</p>
+                            <p>CEP 27123-150</p>
+                        </address>
+                    </div>
+                    <div class="linha fechar-info">
+                        <button class="btn-menu-mobile" onclick="fecharInformações(this)">
                         <img src="./img/fechar.svg" alt="">
-                    </button>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div id="email" class="display-none">
-                <div class="telefone-título">
-                    <img src="./img/mail.svg" alt="Email geral do escritório de advocacia">
-                    <h3>E-mail</h3>
-                </div>
-                <div class="números">
-                    <p><a href="mailto:contato@izzoadv.com.br">contato@izzoadv.com.br</a></p>
-                </div>
-                <div class="linha fechar-info">
-                    <button class="btn-menu-mobile" onclick="fecharInformações(this)">
-                        <img src="./img/fechar.svg" alt="">
-                    </button>
-                </div>
-            </div>
-            <div id="endereco" class="display-none">
-                <div class="telefone-título">
-                    <img src="./img/pin.svg" alt="Endereço do esctirório de advocacia">
-                    <h3>Endereço</h3>
-                </div>
-                <div class="números">
-                    <address>
-                        <p>Rua Ana Neri - nº 126 - sala 213</p>
-                        <p>Centro</p>
-                        <p>Barra do Piraí - RJ</p>
-                        <p>CEP 27123-150</p>
-                    </address>
-                </div>
-                <div class="linha fechar-info">
-                    <button class="btn-menu-mobile" onclick="fecharInformações(this)">
-                    <img src="./img/fechar.svg" alt="">
-                    </button>
-                </div>
-            </div>
+
     </header>
     <main>
         <h1>Izzo Advocacia e consultoria</h1>

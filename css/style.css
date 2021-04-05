@@ -34,6 +34,13 @@ h2 {
     font-weight: 400;
 }
 
+.menu-fixo {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 17px;
+}
+
 .linha {
     display: flex;
     flex-direction: row;
@@ -192,7 +199,7 @@ nav {
 }
 
 .menu-principal-aberto {
-    background-color: rgb(217, 217, 217);
+    background-color: none;
     max-height: 700px;
     transition: max-height 1.5s linear;
     -webkit-transition: max-height 1.5s linear;
