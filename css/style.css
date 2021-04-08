@@ -38,6 +38,7 @@ h2 {
     position: fixed;
     width: 100%;
     z-index: 999;
+    height: 90px;
 }
 
 .linha {
@@ -435,7 +436,7 @@ button:focus {
     display: flex;
     flex-direction: row;
     background-color: aqua;
-    min-height: calc(100vh - 80px);
+    min-height: calc(100vh - 90px);
     width: 100%;
     margin-top: -20px;
 }
