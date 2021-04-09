@@ -132,11 +132,13 @@
                         <h3>Endereço</h3>
                     </div>
                     <div class="números">
-                        <address>
-                            <p>Rua Ana Neri - nº 126 - sala 213</p>
-                            <p>Centro</p>
-                            <p>Barra do Piraí - RJ</p>
-                            <p>CEP 27123-150</p>
+                        <address id="local">
+                            <a href="https://www.google.com.br/maps/place/Izzo+Advocacia+e+Consultoria/@-22.471504,-43.8293561,17z/data=!3m1!4b1!4m5!3m4!1s0x9eb5a0f5a76d29:0xf4925284afe15c0e!8m2!3d-22.471504!4d-43.8271674" target="_blank">
+                                <p>Rua Ana Neri - nº 126 - sala 213</p>
+                                <p>Centro</p>
+                                <p>Barra do Piraí - RJ</p>
+                                <p>CEP 27123-150</p>
+                            </a>
                         </address>
                     </div>
                     <div class="linha fechar-info">
@@ -150,44 +152,58 @@
     </header>
     <main>
         <h1>Izzo Advocacia e consultoria</h1>
-        <div class="slider">
-            <img src="./img/advocacia-extrajudicial.png" alt="Excrivão carimbando um divórcio extrajudicial, inventário ou usucapião">
-            <h2>Advocacia <br> Extrajudicial:</h2>
-            <h2>rápida, simples e <br> econômica</h2>
-            <div class="linha" id="alinhar-botão">
-                <button id='btn-principais-serviços'>Principais serviços</button>
+        <section name="slider advocacioa extrajudicial ou em cartíro">
+            <div class="slider">
+                <img src="./img/advocacia-extrajudicial.png" alt="Excrivão carimbando um divórcio extrajudicial, inventário ou usucapião">
+                <h2>Advocacia <br> Extrajudicial:</h2>
+                <h2>rápida, simples e <br> econômica</h2>
+                <div class="linha" id="alinhar-botão">
+                    <button id='btn-principais-serviços'>Principais serviços</button>
+                </div>
+            </div>
+        </section>
+        <section name="Tipos de atendimento advocatício">
+            <div class="coluna">
+                <div class="box-tipos-atendimento">
+                    <img src="./img/user.svg" alt="Pessoa Física">
+                    <h2>Pessoa Física</h2>
+                    <div class="divisor"></div>
+                    <p>A abrangente capacitação de nossos advogados, permite um atendimento de qualidade, integral e personalizado. Com capacidade para atender os mais diversos tipos de clientes, e prover todas as soluções jurídicas necessárias, independentemente
+                        das necessidades de cada cliente.</p>
+                </div>
+                <div class="box-tipos-atendimento">
+                    <img src="./img/users.svg" alt="Pessoa Física">
+                    <h2>Pessoa Jurídica</h2>
+                    <div class="divisor"></div>
+                    <p>Com profissionais capacitados em todas as áreas do direito, inerentes ao desenvolvimento de qualquer atividade empresarial, proporcionamos um serviço completo e capaz de suprir com qualidade todas as necessidades jurídicas de pequenas,
+                        médias e grandes empresas. </p>
+                </div>
+                <div class="box-tipos-atendimento">
+                    <img src="./img/carimbo.svg" alt="Pessoa Física">
+                    <h2>Advocacia Extrajudicial</h2>
+                    <div class="divisor"></div>
+                    <p>Especializados em advocacia extrajudicial, essa nova modalidade pertmite a obtenção do resultado almejado com maior rapidez, menor custo e maior facilidade. Assim, priorizamos a desjudicialização desses procedimetos, que agora podem
+                        ser realizados nos cartórios de registro civil e de imóveis.</p>
+                </div>
+                <div class="box-tipos-atendimento">
+                    <img src="./img/martelo.svg" alt="Pessoa Física">
+                    <h2>Advocacia Judicial</h2>
+                    <div class="divisor"></div>
+                    <p>Infelizmente, nem todos os problemas jurídicos podem ser resolvidos extrajudicialmente. Sendo assim, também contamos com profissionais capacitados, nas principais áreas do direito, a fim de atender aqueles clientes, cujas necessidades
+                        não podem ser solucionadas sem a intervenção do Poder Judiciário.</p>
+                </div>
+            </div>
+        </section>
+        </section name="Caracteristicas de um bom advogado">
+        <div id="divisor-diferenciais">
+            <h2>Todos são iguais perante a lei. <br> <strong>Um bom advogado é o que faz a diferença...</strong> </h2>
+        </div>
+        <div class="coluna coluna-diferenciais">
+            <div class="diferenciais">
+
             </div>
         </div>
-        <div class="coluna">
-            <div class="box-serviço">
-                <img src="./img/user.svg" alt="Pessoa Física">
-                <h2>Pessoa Física</h2>
-                <div class="divisor"></div>
-                <p>A abrangente capacitação de nossos advogados, permite um atendimento de qualidade, integral e personalizado. Com capacidade para atender os mais diversos tipos de clientes, e prover todas as soluções jurídicas necessárias, independentemente
-                    das necessidades de cada cliente.</p>
-            </div>
-            <div class="box-serviço">
-                <img src="./img/users.svg" alt="Pessoa Física">
-                <h2>Pessoa Jurídica</h2>
-                <div class="divisor"></div>
-                <p>Com profissionais capacitados em todas as áreas do direito, inerentes ao desenvolvimento de qualquer atividade empresarial, proporcionamos um serviço completo e capaz de suprir com qualidade todas as necessidades jurídicas de pequenas,
-                    médias e grandes empresas. </p>
-            </div>
-            <div class="box-serviço">
-                <img src="./img/carimbo.svg" alt="Pessoa Física">
-                <h2>Advocacia Extrajudicial</h2>
-                <div class="divisor"></div>
-                <p>Especializados em advocacia extrajudicial, essa nova modalidade pertmite a obtenção do resultado almejado com maior rapidez, menor custo e maior facilidade. Assim, priorizamos a desjudicialização desses procedimetos, que agora podem ser
-                    realizados nos cartórios de registro civil e de imóveis.</p>
-            </div>
-            <div class="box-serviço">
-                <img src="./img/martelo.svg" alt="Pessoa Física">
-                <h2>Advocacia Judicial</h2>
-                <div class="divisor"></div>
-                <p>Infelizmente, nem todos os problemas jurídicos podem ser resolvidos extrajudicialmente. Sendo assim, também contamos com profissionais capacitados, nas principais áreas do direito, a fim de atender aqueles clientes, cujas necessidades
-                    não podem ser solucionadas sem a intervenção do Poder Judiciário.</p>
-            </div>
-        </div>
+        <section>
     </main>
     <script src="./js/main.js"></script>
 </body>

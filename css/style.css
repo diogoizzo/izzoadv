@@ -428,6 +428,10 @@ button:focus {
     margin-bottom: 10px;
 }
 
+#local>a {
+    text-decoration: none;
+}
+
 .display-none {
     display: none;
 }
@@ -491,7 +495,7 @@ main h1 {
     min-width: 300px;
 }
 
-.box-serviço {
+.box-tipos-atendimento {
     display: inline-block;
     width: 85%;
     margin: 0 auto;
@@ -503,7 +507,7 @@ main h1 {
     box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
 }
 
-.box-serviço>img {
+.box-tipos-atendimento>img {
     margin-top: 4%;
     width: 15%;
 }
@@ -514,12 +518,12 @@ main h1 {
     box-shadow: 3.277px 2.294px 4.55px 0.45px rgba(0, 0, 0, 0.1), -2.828px -2.828px 1.82px 0.18px rgba(255, 255, 255, 0.35);
 }
 
-.box-serviço>h2 {
+.box-tipos-atendimento>h2 {
     margin-top: 3%;
     margin-bottom: 6%;
 }
 
-.box-serviço>p {
+.box-tipos-atendimento>p {
     font-family: izzo2-regular, serif;
     display: inline-block;
     margin-bottom: 4%;
@@ -527,4 +531,27 @@ main h1 {
     font-size: max(4vw, 16px);
     line-height: 22px;
     padding: 0 2%;
+}
+
+#divisor-diferenciais {
+    background-color: #711817;
+    text-align: center;
+    margin-top: 7.5%;
+    box-shadow: 0px 9px 17.1px 0.9px rgba(0, 0, 0, 0.41);
+    padding: 4%;
+}
+
+#divisor-diferenciais>h2 {
+    color: #d9d9d9;
+    font-family: izzo1-regular, sans-serif;
+    font-size: max(5vw, 16px);
+    text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.35);
+}
+
+#divisor-diferenciais>h2>strong {
+    display: inline-block;
+    color: #d9d9d9;
+    font-family: izzo1-semibold;
+    font-size: max(6vw, 20px);
+    margin-top: 2%;
 }
