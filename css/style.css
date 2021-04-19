@@ -480,13 +480,12 @@
         font-family: izzo1-regular, sans-serif;
         font-size: 3.2vw;
         background-color: rgb(113, 24, 23);
-        box-shadow: 3.277px 2.294px 3.92px 0.08px rgba(0, 0, 0, 0.7), -2.828px -2.828px 3.92px 0.08px rgba(255, 253, 253, 0.4);
         border: none;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+        border-radius: 10vw;
+        -webkit-border-radius: 10vw;
+        -moz-border-radius: 10vw;
+        -ms-border-radius: 10vw;
+        -o-border-radius: 10vw;
     }
     
     #alinhar-botão {
@@ -567,6 +566,10 @@
         background-color: #818181;
     }
     
+    .box-diferenciais:last-child {
+        padding-bottom: 16%;
+    }
+    
     .box-diferenciais>p {
         color: #333333;
         text-align: center;
@@ -588,6 +591,16 @@
         color: #333333;
         font-size: max(15vw, 70px);
         font-family: izzo1-semibold, sans-serif;
+    }
+    
+    .container-serviços {
+        border-radius: 28px;
+        background-color: rgb(217, 217, 217);
+        box-shadow: inset -8.485px -8.485px 28.8px 3.2px rgba(255, 255, 255), inset 7.372px 5.162px 16.24px 11.76px rgba(0, 0, 0, 0.15);
+        height: 1356px;
+        position: relative;
+        z-index: 10;
+        margin-top: -6%;
     }
     /* .título-diferenciais:nth-child(2),
     .título-diferenciais:nth-child(3) {
