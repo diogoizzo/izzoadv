@@ -28,6 +28,26 @@
         height: 100%;
     }
     
+     ::-webkit-scrollbar {
+        width: 9px;
+        height: 9px;
+    }
+    
+     ::-webkit-scrollbar-thumb {
+        background: #818181;
+        border-radius: 10px;
+    }
+    
+     ::-webkit-scrollbar-thumb:hover {
+        background: #999999;
+    }
+    
+     ::-webkit-scrollbar-track {
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: inset 7px 10px 12px #f0f0f0;
+    }
+    
     h2 {
         font-family: izzo1-semibold;
         font-size: max(6vw, 20px);
