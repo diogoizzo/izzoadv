@@ -707,7 +707,7 @@
         background-image: -webkit-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
         background-image: -ms-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
         box-shadow: 0px -4px 5.46px 0.54px rgba(0, 0, 0, 0.1);
-        height: 120px;
+        min-height: 120px;
         justify-content: flex-start;
         border-radius: 22px;
         border-top: 2px solid rgba(255, 255, 255, 0.6);
@@ -764,4 +764,53 @@
         color: #ffffff;
         font-size: max(4vw, 16px);
         line-height: 20px;
+    }
+    
+    .box-artigos {
+        margin-top: 8%;
+        height: inherit;
+        min-height: 480px;
+    }
+    
+    .artigo {
+        box-shadow: none;
+        background-image: none;
+        width: 100%;
+        border: none;
+        backdrop-filter: none;
+        padding: 2%;
+        background-color: #d9d9d9;
+        border-radius: 22px 22px 10px 10px;
+        -webkit-border-radius: 22px 22px 10px 10px;
+        -moz-border-radius: 22px 22px 10px 10px;
+        -ms-border-radius: 22px 22px 10px 10px;
+        -o-border-radius: 22px 22px 10px 10px;
+    }
+    
+    .box-artigos>.caixa-de-imagem {
+        background-image: url('/img/img-artigo.png');
+    }
+    
+    .box-artigos p {
+        font-family: izzo2-regular, serif;
+        font-size: max(3vw, 14px);
+        ;
+    }
+    
+    .botões-artigos {
+        margin-top: 6%;
+    }
+    
+    .botões-artigos button {
+        border: none;
+    }
+    
+    .botões-artigos>button {
+        position: relative;
+        right: -8%;
+    }
+    
+    .compartilhar {
+        position: relative;
+        left: -8%;
     }
