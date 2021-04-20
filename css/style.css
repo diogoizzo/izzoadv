@@ -798,19 +798,41 @@
     }
     
     .botões-artigos {
+        justify-content: space-between;
         margin-top: 6%;
+        padding: 0 2%;
+    }
+    
+    .botões-artigos img {
+        height: 100%;
+        object-fit: contain;
     }
     
     .botões-artigos button {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
         border: none;
+        background-color: rgb(113, 24, 23);
+        color: #d9d9d9;
+        height: 4vh;
+        font-family: izzo1-regular, sans-serif;
     }
     
     .botões-artigos>button {
-        position: relative;
-        right: -8%;
+        padding: 10px;
+        border-radius: 5vw;
+        -webkit-border-radius: 5vw;
+        -moz-border-radius: 5vw;
+        -ms-border-radius: 5vw;
+        -o-border-radius: 5vw;
     }
     
-    .compartilhar {
-        position: relative;
-        left: -8%;
+    .compartilhar>button {
+        padding: 10px;
+        border-radius: 5vw;
+        -webkit-border-radius: 5vw;
+        -moz-border-radius: 5vw;
+        -ms-border-radius: 5vw;
+        -o-border-radius: 5vw;
     }
