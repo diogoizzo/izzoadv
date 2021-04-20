@@ -597,12 +597,126 @@
         border-radius: 28px;
         background-color: rgb(217, 217, 217);
         box-shadow: inset -8.485px -8.485px 28.8px 3.2px rgba(255, 255, 255), inset 7.372px 5.162px 16.24px 11.76px rgba(0, 0, 0, 0.15);
-        height: 1356px;
         position: relative;
         z-index: 10;
         margin-top: -6%;
+        justify-content: flex-start;
+        padding: 8% 0;
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        -ms-border-radius: 28px;
+        -o-border-radius: 28px;
     }
-    /* .título-diferenciais:nth-child(2),
-    .título-diferenciais:nth-child(3) {
-        margin-left: min(-8vw, -40px);
-    } */
+    
+    .container-serviços h2 {
+        color: #333333;
+        font-size: max(6vw, 25px);
+    }
+    
+    .divisor-serviços {
+        border-width: 0.4px;
+        border-color: rgb(0, 0, 0, 0.2);
+        border-style: solid;
+        background-color: rgb(217, 217, 217, 0.3);
+        box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
+        height: 2px;
+        width: 90%;
+        margin: 8% auto;
+    }
+    
+    .box-serviços {
+        position: relative;
+        border-radius: 22px;
+        background-color: rgb(217, 217, 217);
+        box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
+        margin: 0 auto 8% auto;
+        min-height: 400px;
+        width: 90%;
+        -webkit-border-radius: 22px;
+        -moz-border-radius: 22px;
+        -ms-border-radius: 22px;
+        -o-border-radius: 22px;
+    }
+    
+    .box-serviços:last-child {
+        margin-bottom: 0;
+    }
+    
+    .caixa-de-imagem {
+        justify-content: flex-end;
+        border-radius: 22px;
+        width: 96%;
+        margin: 2% auto;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        -webkit-border-radius: 22px;
+        -moz-border-radius: 22px;
+        -ms-border-radius: 22px;
+        -o-border-radius: 22px;
+    }
+    
+    #inventário {
+        background-image: url('/img/Inventário.png');
+    }
+    
+    #divórcio {
+        background-image: url('/img/Divórcio.png');
+    }
+    
+    #usucapião {
+        background-image: url('/img/Usucapião.png');
+    }
+    
+    #contratos {
+        background-image: url('/img/Contratos.png');
+    }
+    
+    #família {
+        background-image: url('/img/Família.png');
+    }
+    
+    #Consumidor {
+        background-image: url('/img/Consumidor.png');
+    }
+    
+    .box-texto {
+        position: relative;
+        background-image: -moz-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
+        background-image: -webkit-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
+        background-image: -ms-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
+        box-shadow: 0px -4px 5.46px 0.54px rgba(0, 0, 0, 0.1);
+        height: 120px;
+        justify-content: flex-start;
+        border-radius: 22px;
+        border-top: 2px solid rgba(255, 255, 255, 0.6);
+        border-left: 2px solid rgba(255, 255, 255, 0.6);
+        -webkit-border-radius: 22px;
+        -moz-border-radius: 22px;
+        -ms-border-radius: 22px;
+        -o-border-radius: 22px;
+        backdrop-filter: blur(3px);
+    }
+    
+    .box-texto>h3 {
+        font-size: max(6vw, 20px);
+        color: #333333;
+        font-family: izzo1-semibold, serif;
+        margin: 6% auto;
+    }
+    
+    .box-texto>button {
+        color: #d9d9d9;
+        border: none;
+        height: 20%;
+        width: 30%;
+        margin: 0 auto;
+        border-radius: 10vw;
+        line-height: 148%;
+        -webkit-border-radius: 10vw;
+        -moz-border-radius: 10vw;
+        -ms-border-radius: 10vw;
+        -o-border-radius: 10vw;
+        background-color: rgb(113, 24, 23);
+        box-shadow: 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.3), -3.536px -3.536px 4.55px 0.45px rgba(255, 253, 253, 0.45);
+    }
