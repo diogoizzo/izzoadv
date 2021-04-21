@@ -678,27 +678,27 @@
     }
     
     #inventário {
-        background-image: url('/img/Inventário.png');
+        background-image: url('./../img/Inventário.png');
     }
     
     #divórcio {
-        background-image: url('/img/Divórcio.png');
+        background-image: url('./../img/Divórcio.png');
     }
     
     #usucapião {
-        background-image: url('/img/Usucapião.png');
+        background-image: url('./../img/Usucapião.png');
     }
     
     #contratos {
-        background-image: url('/img/Contratos.png');
+        background-image: url('./../img/Contratos.png');
     }
     
     #família {
-        background-image: url('/img/Família.png');
+        background-image: url('./../img/Família.png');
     }
     
     #Consumidor {
-        background-image: url('/img/Consumidor.png');
+        background-image: url('./../img/Consumidor.png');
     }
     
     .box-texto {
