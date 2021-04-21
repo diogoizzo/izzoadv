@@ -788,7 +788,7 @@
     }
     
     .box-artigos>.caixa-de-imagem {
-        background-image: url('/img/img-artigo.png');
+        background-image: url('./../img/img-artigo.png');
     }
     
     .box-artigos p {
