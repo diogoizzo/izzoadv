@@ -1020,11 +1020,77 @@
             -o-border-radius: 4vh;
         }
         
+        #consulta {
+            width: 85%;
+            margin: 0 auto;
+            position: relative;
+            top: -18px;
+            padding-top: 50px;
+        }
+        
+        #consulta>p {
+            font-family: izzo2-regular, serif;
+            font-size: max(3vw, 15px);
+            margin: 10px 0;
+        }
+        
+        #consulta>form {
+            position: relative;
+            margin-top: 20px;
+            border-radius: 22px;
+            background-image: -moz-linear-gradient( -64deg, rgba(255, 255, 255, 0.4902) 0%, rgba(255, 255, 255, 0.1098) 100%);
+            background-image: -webkit-linear-gradient( -64deg, rgba(255, 255, 255, 0.4902) 0%, rgba(255, 255, 255, 0.1098) 100%);
+            background-image: -ms-linear-gradient( -64deg, rgba(255, 255, 255, 0.4902) 0%, rgba(255, 255, 255, 0.1098) 100%);
+            padding: 15px 0;
+        }
+        
         .form-contato>label {
             display: block;
+            width: 75%;
+            margin: 0 auto;
+            text-align: left;
+            margin-bottom: 3px;
+        }
+        
+        .form-contato>select {
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            border: none;
+            outline: none;
+            border-radius: 4vw;
+            padding-left: 5px;
+            -webkit-border-radius: 4vw;
+            -moz-border-radius: 4vw;
+            -ms-border-radius: 4vw;
+            -o-border-radius: 4vw;
+        }
+        
+        .form-divisor {
+            width: 85%;
+            height: 1px;
+            background-color: rgba(217, 217, 217, 0.8);
+            margin: 15px auto;
+        }
+        
+        .form-contato>input {
+            width: 75%;
+            margin-bottom: 10px;
+            border-radius: 4vw;
+            border: none;
+            text-align: center;
+            -webkit-border-radius: 4vw;
+            -moz-border-radius: 4vw;
+            -ms-border-radius: 4vw;
+            -o-border-radius: 4vw;
+        }
+        
+        .form-contato>input:focus {
+            outline: none;
         }
         
         .curtir {
-            height: 15px;
-            max-height: 15px;
+            height: 30px;
+            max-height: 30px;
         }
