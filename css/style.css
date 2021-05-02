@@ -681,35 +681,31 @@
         #inventário {
             background-image: url('./../img/Inventário.png');
             background-size: cover;
-            height: 100%;
         }
         
         #divórcio {
             background-image: url('./../img/Divórcio.png');
             background-size: cover;
-            height: 100%;
         }
         
         #usucapião {
             background-image: url('./../img/Usucapião.png');
             background-size: cover;
-            height: 100%;
         }
         
         #contratos {
             background-image: url('./../img/Contratos.png');
             background-size: cover;
-            height: 100%;
         }
         
         #família {
             background-image: url('./../img/Família.png');
             background-size: cover;
-            height: 100%;
         }
         
         #Consumidor {
             background-image: url('./../img/Consumidor.png');
+            background-size: cover;
         }
         
         .box-texto {
