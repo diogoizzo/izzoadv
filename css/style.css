@@ -19,6 +19,7 @@
             margin: 0;
             box-sizing: border-box;
             color: #818181;
+            -webkit-appearance: none;
         }
         
         body {
@@ -981,21 +982,23 @@
             /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: #b6b6b6;
             opacity: 1;
+            font-size: 14px;
             /* Firefox */
         }
         
         #nm-input-text:-ms-input-placeholder {
             /* Internet Explorer 10-11 */
             color: #b6b6b6;
+            font-size: 14px;
         }
         
         #nm-input-text::-ms-input-placeholder {
             /* Microsoft Edge */
             color: #b6b6b6;
+            font-size: 14px;
         }
         
         #nm-sub {
-            -webkit-appearance: none;
             padding: 2px 15px;
             margin-top: 4%;
             font-size: 14px;
