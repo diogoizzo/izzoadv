@@ -19,7 +19,6 @@
             margin: 0;
             box-sizing: border-box;
             color: #818181;
-            -webkit-appearance: none;
         }
         
         body {
@@ -963,6 +962,7 @@
         
         #nm-input-text {
             text-align: center;
+            font-size: 14px;
             border: none;
             outline: none;
             background: none;
