@@ -1054,6 +1054,7 @@
         
         .form-contato>select {
             display: block;
+            background-color: white;
             width: 75%;
             margin: 0 auto;
             margin-bottom: 10px;
