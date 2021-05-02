@@ -995,9 +995,6 @@
         }
         
         #nm-sub {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
             padding: 2px 15px;
             margin-top: 4%;
             font-size: 14px;
@@ -1005,6 +1002,8 @@
             border: none;
             background-color: rgb(217, 217, 217);
             box-shadow: 3.277px 2.294px 3.92px 0.08px rgb(0 0 0 / 9%), -2.828px -2.828px 3.92px 0.08px rgb(255 253 253 / 40%);
+            -webkit-box-shadow: 3.277px 2.294px 3.92px 0.08px rgb(0 0 0 / 9%), -2.828px -2.828px 3.92px 0.08px rgb(255 253 253 / 40%);
+            -moz-box-shadow: 3.277px 2.294px 3.92px 0.08px rgb(0 0 0 / 9%), -2.828px -2.828px 3.92px 0.08px rgb(255 253 253 / 40%);
             -webkit-border-radius: 4vh;
             -moz-border-radius: 4vh;
             -ms-border-radius: 4vh;
