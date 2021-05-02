@@ -448,7 +448,7 @@
             margin-bottom: 10px;
         }
         
-        #local>a {
+        .local>a {
             text-decoration: none;
         }
         
@@ -1018,4 +1018,12 @@
             -moz-border-radius: 4vh;
             -ms-border-radius: 4vh;
             -o-border-radius: 4vh;
+        }
+        
+        .form-contato>label {
+            display: block;
+        }
+        
+        .curtir>img {
+            height: 30px;
         }
