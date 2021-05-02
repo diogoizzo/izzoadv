@@ -962,7 +962,7 @@
         
         #nm-input-text {
             text-align: center;
-            font-size: 14px;
+            font-size: 16px;
             border: none;
             outline: none;
             background: none;
@@ -982,20 +982,20 @@
             /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: #b6b6b6;
             opacity: 1;
-            font-size: 14px;
+            font-size: 16px;
             /* Firefox */
         }
         
         #nm-input-text:-ms-input-placeholder {
             /* Internet Explorer 10-11 */
             color: #b6b6b6;
-            font-size: 14px;
+            font-size: 16px;
         }
         
         #nm-input-text::-ms-input-placeholder {
             /* Microsoft Edge */
             color: #b6b6b6;
-            font-size: 14px;
+            font-size: 16px;
         }
         
         #nm-sub {
