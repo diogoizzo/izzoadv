@@ -664,6 +664,7 @@
         }
         
         .caixa-de-imagem {
+            position: relative;
             justify-content: flex-end;
             border-radius: 22px;
             width: 96%;
@@ -679,22 +680,32 @@
         
         #inventário {
             background-image: url('./../img/Inventário.png');
+            background-size: cover;
+            height: 100%;
         }
         
         #divórcio {
             background-image: url('./../img/Divórcio.png');
+            background-size: cover;
+            height: 100%;
         }
         
         #usucapião {
             background-image: url('./../img/Usucapião.png');
+            background-size: cover;
+            height: 100%;
         }
         
         #contratos {
             background-image: url('./../img/Contratos.png');
+            background-size: cover;
+            height: 100%;
         }
         
         #família {
             background-image: url('./../img/Família.png');
+            background-size: cover;
+            height: 100%;
         }
         
         #Consumidor {
@@ -959,7 +970,7 @@
         
         #nm-input-text {
             text-align: center;
-            font-size: 16px;
+            font-size: 14px;
             border: none;
             outline: none;
             background: none;
@@ -979,20 +990,20 @@
             /* Chrome, Firefox, Opera, Safari 10.1+ */
             color: #b6b6b6;
             opacity: 1;
-            font-size: 16px;
+            font-size: 14px;
             /* Firefox */
         }
         
         #nm-input-text:-ms-input-placeholder {
             /* Internet Explorer 10-11 */
             color: #b6b6b6;
-            font-size: 16px;
+            font-size: 14px;
         }
         
         #nm-input-text::-ms-input-placeholder {
             /* Microsoft Edge */
             color: #b6b6b6;
-            font-size: 16px;
+            font-size: 14px;
         }
         
         #nm-sub {
