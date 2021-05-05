@@ -924,6 +924,8 @@
         }
         
         .dúvidas {
+            position: relative;
+            z-index: 10;
             border-radius: 22px;
             padding: 4%;
             background-color: rgb(217, 217, 217);
@@ -1020,18 +1022,37 @@
             -o-border-radius: 4vh;
         }
         
+        #sc-consulta {
+            position: relative;
+            background-image: url('../img/Consulta.png');
+            background-repeat: none;
+            background-size: cover;
+            margin-top: -18px;
+            z-index: 1;
+        }
+        
+        #contraste {
+            backdrop-filter: brightness(60%)
+        }
+        
         #consulta {
             width: 85%;
             margin: 0 auto;
             position: relative;
-            top: -18px;
-            padding-top: 50px;
+            padding-top: 65px;
+            padding-bottom: 30px;
+        }
+        
+        #consulta>h2,
+        #consulta>p {
+            color: #ffffff;
         }
         
         #consulta>p {
             font-family: izzo2-regular, serif;
             font-size: max(3vw, 15px);
             margin: 10px 0;
+            margin-top: 40px;
         }
         
         #consulta>form {
@@ -1041,7 +1062,15 @@
             background-image: -moz-linear-gradient( -64deg, rgba(255, 255, 255, 0.4902) 0%, rgba(255, 255, 255, 0.1098) 100%);
             background-image: -webkit-linear-gradient( -64deg, rgba(255, 255, 255, 0.4902) 0%, rgba(255, 255, 255, 0.1098) 100%);
             background-image: -ms-linear-gradient( -64deg, rgba(255, 255, 255, 0.4902) 0%, rgba(255, 255, 255, 0.1098) 100%);
-            padding: 15px 0;
+            padding: 30px 0;
+        }
+        
+        .form-contato>h3 {
+            font-family: izzo1-semibold, sans-serif;
+            color: #333333;
+            font-size: 18px;
+            text-transform: uppercase;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.30);
         }
         
         .form-contato>label {
@@ -1050,11 +1079,12 @@
             margin: 0 auto;
             text-align: left;
             margin-bottom: 3px;
+            color: #333333;
         }
         
         .form-contato>select {
             display: block;
-            background-color: white;
+            background-color: rgb(234 233 233 / 60%);
             width: 75%;
             margin: 0 auto;
             margin-bottom: 10px;
@@ -1064,6 +1094,7 @@
             outline: none;
             border-radius: 4vw;
             padding-left: 5px;
+            color: #333333;
             -webkit-border-radius: 4vw;
             -moz-border-radius: 4vw;
             -ms-border-radius: 4vw;
@@ -1073,13 +1104,15 @@
         .form-divisor {
             width: 85%;
             height: 1px;
-            background-color: rgba(217, 217, 217, 0.8);
+            background-color: rgb(78 75 75 / 25%);
             margin: 15px auto;
         }
         
         .form-contato>input {
             display: inline-block;
+            color: #333333;
             width: 75%;
+            background-color: rgb(234 233 233 / 60%);
             margin-bottom: 10px;
             border-radius: 4vw;
             font-size: 14px;
