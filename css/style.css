@@ -1073,8 +1073,7 @@
         .form-contato>h3 {
             font-family: izzo1-semibold, sans-serif;
             color: #333333;
-            font-size: 18px;
-            text-transform: uppercase;
+            font-size: max(6vw, 20px);
             text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.30);
         }
         
