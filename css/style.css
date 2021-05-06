@@ -13,6 +13,11 @@
             src: url('../font/roboto-slab-regular.ttf');
         }
         
+        @font-face {
+            font-family: izzo-logo;
+            src: url('../font/bankgothic-bold.ttf');
+        }
+        
         * {
             font-family: izzo1-regular;
             padding: 0;
@@ -1157,6 +1162,25 @@
             background-color: rgb(113, 24, 23);
             box-shadow: 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.2), -3.536px -3.536px 4.55px 0.45px rgba(255, 253, 253, 0.35);
             -webkit-border-radius: 10vw;
+        }
+        
+        footer {
+            background-color: #696969;
+        }
+        
+        .nome-escritorio {
+            padding: 15px 0;
+            background-color: #333333;
+        }
+        
+        .nome-escritorio>h2 {
+            font-family: izzo-logo;
+            text-transform: uppercase;
+        }
+        
+        footer img {
+            height: 40px;
+            color: red;
         }
         
         .curtir {
