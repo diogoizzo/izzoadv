@@ -881,13 +881,13 @@
             align-items: center;
             border: none;
             height: 4vh;
-            width: 10vh;
-            border-radius: 4vw;
+            width: 18vw;
+            border-radius: 16vw;
             box-shadow: 3.277px 2.294px 3.92px 0.08px rgb(0 0 0 / 9%), -2.828px -2.828px 3.92px 0.08px rgb(255 253 253 / 40%);
-            -webkit-border-radius: 4vw;
-            -moz-border-radius: 4vw;
-            -ms-border-radius: 4vw;
-            -o-border-radius: 4vw;
+            -webkit-border-radius: 16vw;
+            -moz-border-radius: 16vw;
+            -ms-border-radius: 16vw;
+            -o-border-radius: 16vw;
         }
         
         .marcadores>button>img {
@@ -1168,6 +1168,18 @@
             background-color: #696969;
         }
         
+        footer p {
+            color: #d9d9d9;
+            font-family: izzo2-regular, serif;
+            line-height: 25px;
+        }
+        
+        footer a {
+            color: #d9d9d9;
+            font-family: izzo2-regular, serif;
+            text-decoration: none;
+        }
+        
         .nome-escritorio {
             padding: 15px 0;
             background-color: #333333;
@@ -1178,12 +1190,32 @@
             text-transform: uppercase;
         }
         
-        footer img {
+        footer>.coluna>img {
+            margin-top: 30px;
+            margin-bottom: 10px;
             height: 40px;
-            color: red;
         }
         
         .curtir {
-            height: 30px;
-            max-height: 30px;
+            margin-top: 10px;
+            height: 25px;
+            max-height: 25px;
+        }
+        
+        .footer-divisor {
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 30px;
+            height: 1px;
+            background-color: rgb(105, 105, 105);
+            box-shadow: -1px -1px 1px 0.72px rgba(255, 253, 253, 0.09), 1px 1px 1px 0.54px rgba(1, 1, 1, 0.04);
+        }
+        
+        .links-curtir {
+            justify-content: space-around;
+            padding: 30px 15%;
+        }
+        
+        #img-curtir {
+            display: none;
         }
