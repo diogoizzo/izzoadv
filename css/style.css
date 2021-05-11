@@ -465,7 +465,7 @@
             display: flex;
             flex-direction: row;
             background-color: aqua;
-            min-height: calc(100vh - 90px);
+            min-height: calc(100vh - 60px);
             width: 100%;
             margin-top: -20px;
         }
@@ -473,10 +473,6 @@
         .slider img {
             object-fit: cover;
             width: 100%;
-        }
-        
-        main h1 {
-            display: none;
         }
         
         .slider h2 {
@@ -519,6 +515,29 @@
             min-width: 300px;
         }
         
+        .sobre {
+            background-color: #333333;
+        }
+        
+        h1 {
+            width: 85%;
+            margin: 0 auto;
+            font-family: izzo1-semibold, sans-serif;
+            font-size: max(6vw, 20px);
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+        
+        .sobre>p {
+            width: 85%;
+            margin: 0 auto;
+            font-family: izzo2-regular, serif;
+            color: #9e9e9e;
+            padding-bottom: 30px;
+            line-height: 130%;
+            font-size: max(4vw, 16px);
+        }
+        
         .box-tipos-atendimento {
             display: inline-block;
             width: 85%;
@@ -538,8 +557,11 @@
         
         .divisor {
             height: 1px;
+            width: 95%;
+            margin: 0 auto;
+            border: none;
             background-color: rgb(217, 217, 217);
-            box-shadow: 3.277px 2.294px 4.55px 0.45px rgba(0, 0, 0, 0.1), -2.828px -2.828px 1.82px 0.18px rgba(255, 255, 255, 0.35);
+            box-shadow: 2px 2px 2px 0.45px rgba(0, 0, 0, 0.1), -2px -2px 1.8px 0.18px rgba(255, 255, 255, 0.35);
         }
         
         .box-tipos-atendimento>h2 {
@@ -1181,7 +1203,7 @@
         }
         
         .nome-escritorio {
-            padding: 15px 0;
+            padding: 25px 0;
             background-color: #333333;
         }
         
