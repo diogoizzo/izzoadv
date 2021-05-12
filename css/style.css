@@ -1202,17 +1202,22 @@
             text-decoration: none;
         }
         
+        #footer-logo {
+            width: 70%;
+            margin: 10px auto;
+        }
+        
         .nome-escritorio {
             padding: 25px 0;
             background-color: #333333;
         }
         
-        .nome-escritorio>h2 {
-            font-family: izzo-logo;
-            text-transform: uppercase;
+        .col-logo {
+            background-color: #333333;
+            margin: 0;
         }
         
-        footer>.coluna>img {
+        footer>.infos>img {
             margin-top: 30px;
             margin-bottom: 10px;
             height: 40px;
