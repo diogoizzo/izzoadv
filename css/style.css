@@ -741,8 +741,8 @@
             background-image: -webkit-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
             background-image: -ms-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
             box-shadow: 0px -4px 5.46px 0.54px rgba(0, 0, 0, 0.1);
-            min-height: 120px;
-            justify-content: center;
+            height: 120px;
+            justify-content: flex-start;
             align-items: center;
             border-radius: 22px;
             border-top: 2px solid rgba(255, 255, 255, 0.6);
@@ -752,16 +752,23 @@
             -ms-border-radius: 22px;
             -o-border-radius: 22px;
             backdrop-filter: blur(3px);
+            transition: 0.6s ease-out;
+            -webkit-transition: 0.6s ease-out;
+            -moz-transition: 0.6s ease-out;
+            -ms-transition: 0.6s ease-out;
+            -o-transition: 0.6s ease-out;
         }
         
         .box-texto>h3 {
+            margin: 20px auto;
             font-size: max(6vw, 20px);
             color: #333333;
             font-family: izzo1-semibold, serif;
-            margin: 6% auto;
         }
         
         .box-texto>button {
+            position: absolute;
+            bottom: 0;
             display: inline-flex;
             justify-content: center;
             align-items: center;
@@ -780,6 +787,33 @@
             background-color: rgb(113, 24, 23);
             box-shadow: 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.3), -3.536px -3.536px 4.55px 0.45px rgba(255, 253, 253, 0.45);
             -webkit-border-radius: 10vw;
+        }
+        
+        .box-servico-texto {
+            height: 0;
+            opacity: 0;
+            font-family: izzo2-regular, serif;
+            width: 85%;
+            overflow: hidden;
+            transition: height 0.6s linear, opacity 0.3s linear 0.4s;
+            -webkit-transition: height 0.6s linear, opacity 0.3s linear 0.4s;
+            -moz-transition: height 0.6s linear, opacity 0.3s linear 0.4s;
+            -ms-transition: height 0.6s linear, opacity 0.3s linear 0.4s;
+            -o-transition: height 0.6s linear, opacity 0.3s linear 0.4s;
+        }
+        
+        .box-servico-texto>p {
+            color: #333333;
+        }
+        
+        .box-texto:hover {
+            height: 90%;
+        }
+        
+        .box-texto:hover .box-servico-texto {
+            opacity: 1;
+            display: inline-block;
+            height: 80%;
         }
         
         #copy-artigos {
@@ -1229,7 +1263,6 @@
         }
         
         .curtir {
-            margin-top: 10px;
             height: 25px;
             max-height: 25px;
         }
