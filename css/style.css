@@ -1264,9 +1264,10 @@
         
         .info {
             position: fixed;
-            height: 484px;
+            height: 600px;
             bottom: 0;
             z-index: -1;
+            padding-top: 120px;
             background-color: #696969;
         }
         
