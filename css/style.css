@@ -774,13 +774,12 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            padding: 4%;
+            padding: 7%;
             margin-bottom: 6%;
             color: #d9d9d9;
             font-size: 3.6vw;
             border: none;
             height: 3.9vh;
-            width: 40%;
             border-radius: 10vw;
             -webkit-border-radius: 10vw;
             -moz-border-radius: 10vw;

@@ -25,6 +25,12 @@ const btnsSaiba = document.querySelectorAll('.btnSaiba');
 //Eventos
 //Captura de evento dos botões saiba mais
 for (let btn of btnsSaiba) {
+    btn.parentElement.addEventListener('mouseenter', e => {
+        btn.innerHTML = "Mais detalhes";
+    });
+    btn.parentElement.addEventListener('mouseleave', e => {
+        btn.innerHTML = "Saiba mais";
+    });
     btn.addEventListener('click', e => {
         if (window.innerWidth < 450) {
             e.target.innerHTML = 'Mais detalhes';
