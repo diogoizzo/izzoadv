@@ -26,12 +26,6 @@
             color: #818181;
         }
         
-        body,
-        html {
-            -webkit-overflow-scrolling: touch !important;
-            overflow: auto !important;
-        }
-        
         body {
             background-color: rgb(217, 217, 217);
             min-width: 300px;
@@ -1270,10 +1264,9 @@
         
         .info {
             position: fixed;
-            height: 900px;
+            height: 484px;
             bottom: 0;
             z-index: -1;
-            padding-top: 420px;
             background-color: #696969;
         }
         
