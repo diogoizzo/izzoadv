@@ -26,6 +26,7 @@ const btnsSaiba = document.querySelectorAll('.btnSaiba');
 //Captura de evento dos botões saiba mais
 for (let btn of btnsSaiba) {
     btn.addEventListener('click', e => {
+        e.preventDefault();
         if (window.innerWidth < 450) {
             if (e.target.parentElement.offsetHeight > 300) {
                 window.open('servicos.html', '_self');
