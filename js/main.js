@@ -34,7 +34,6 @@ for (let btn of btnsSaiba) {
         if (window.innerWidth < 450) {
             btn.innerHTML = "Saiba mais";
         }
-
     });
     btn.addEventListener('click', e => {
         if (window.innerWidth < 450) {

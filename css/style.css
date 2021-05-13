@@ -677,7 +677,7 @@
             background-color: rgb(217, 217, 217);
             box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
             margin: 0 auto 8% auto;
-            min-height: 450px;
+            min-height: 430px;
             width: 85%;
             z-index: 99;
             -webkit-border-radius: 22px;
@@ -779,15 +779,14 @@
             color: #d9d9d9;
             font-size: 3.6vw;
             border: none;
-            height: 3.9vh;
+            height: 35px;
             border-radius: 10vw;
             -webkit-border-radius: 10vw;
             -moz-border-radius: 10vw;
             -ms-border-radius: 10vw;
             -o-border-radius: 10vw;
             background-color: rgb(113, 24, 23);
-            box-shadow: 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.3), -3.536px -3.536px 4.55px 0.45px rgba(255, 253, 253, 0.45);
-            -webkit-border-radius: 10vw;
+            box-shadow: 3.277px 2.294px 3.92px 0.08px rgb(0 0 0 / 20%), -2.828px -2.828px 3.92px 0.08px rgb(255 253 253 / 40%);
         }
         
         .box-servico-texto {
@@ -893,7 +892,7 @@
             border: none;
             background-color: rgb(113, 24, 23);
             color: #d9d9d9;
-            height: 37px;
+            height: 35px;
             font-family: izzo1-regular, sans-serif;
             padding: 0 15px;
             border-radius: 4vh;
@@ -917,8 +916,8 @@
             justify-content: center;
             align-items: center;
             border: none;
-            height: 37px;
-            width: 37px;
+            height: 35px;
+            width: 35px;
             border-radius: 50%;
             box-shadow: 3.277px 2.294px 3.92px 0.08px rgb(0 0 0 / 9%), -2.828px -2.828px 3.92px 0.08px rgb(255 253 253 / 40%);
             -webkit-border-radius: 50%;
