@@ -28,7 +28,7 @@ for (let btn of btnsSaiba) {
     btn.addEventListener('click', e => {
         if (window.innerWidth < 450) {
             if (e.target.parentElement.offsetHeight > 300) {
-                window.open('/servicos.html', '_self');
+                window.open('servicos.html', '_self');
             }
         }
     });
