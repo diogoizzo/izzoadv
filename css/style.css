@@ -677,6 +677,7 @@
             background-color: rgb(217, 217, 217);
             box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
             margin: 0 auto 8% auto;
+            height: fit-content;
             min-height: 400px;
             width: 85%;
             z-index: 99;
@@ -806,6 +807,7 @@
         .box-servico-texto>p {
             color: #333333;
             line-height: 130%;
+            margin-bottom: 110px;
         }
         
         .box-texto:hover {

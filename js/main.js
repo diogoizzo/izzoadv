@@ -20,7 +20,20 @@ const janelaEndereço = document.querySelector("#endereco");
 const btnMenu = document.querySelector('.btn-menu-mobile');
 const header = document.querySelector('header');
 const slider = document.querySelector('.slider');
+const btnsSaiba = document.querySelectorAll('.btnSaiba');
 //Fim da captura de Dom
+//Eventos
+//Captura de evento dos botões saiba mais
+for (let btn of btnsSaiba) {
+    btn.addEventListener('click', e => {
+        if (window.innerWidth < 450) {
+            if (e.target.parentElement.offsetHeight > 300) {
+                window.open('/servicos.html', '_self');
+            }
+        }
+    });
+}
+
 //menu
 function remover(obj1, label1, obj2, label2, obj3, label3) {
     obj1.classList.remove('menu-aberto');
