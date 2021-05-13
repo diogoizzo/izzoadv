@@ -737,6 +737,7 @@
         
         .box-texto {
             position: relative;
+            width: 100%;
             background-image: -moz-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
             background-image: -webkit-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
             background-image: -ms-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
@@ -808,6 +809,7 @@
         
         .box-texto:hover {
             height: 90%;
+            backdrop-filter: blur(8px);
         }
         
         .box-texto:hover .box-servico-texto {
