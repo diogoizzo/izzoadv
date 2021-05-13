@@ -1264,10 +1264,10 @@
         
         .info {
             position: fixed;
-            height: 600px;
+            height: 900px;
             bottom: 0;
             z-index: -1;
-            padding-top: 120px;
+            padding-top: 420px;
             background-color: #696969;
         }
         
