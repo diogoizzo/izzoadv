@@ -760,8 +760,8 @@
             -moz-border-radius: 22px;
             -ms-border-radius: 22px;
             -o-border-radius: 22px;
-            backdrop-filter: blur(3px);
-            -webkit-backdrop-filter: blur(3px);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
             transition: 0.6s ease-out;
             -webkit-transition: 0.6s ease-out;
             -moz-transition: 0.6s ease-out;
@@ -817,8 +817,6 @@
         
         .box-texto:hover {
             height: 90%;
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
         }
         
         .box-texto:hover .box-servico-texto {
