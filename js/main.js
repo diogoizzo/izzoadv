@@ -214,13 +214,26 @@ function fecharInformações(obj) {
 //Inicio Slider
 //Slider principal
 
+const configSliderPrincipal = {
+    type: 'carousel',
+    autoplay: 4000,
+    gap: 0,
+    hoverpause: false,
+    keyboard: false,
+    swipeThreshold: false,
+    dragThreshold: false
+};
+
+const sliderPrincipal = new Glide('.slider-principal', configSliderPrincipal);
+sliderPrincipal.mount();
+
 //fim do slider principal
 
 //slider artigos
 
 const configSliderArtigos = {
     type: 'carousel',
-    autoplay: 6000
+    autoplay: 6000,
 };
 const sliderArtigos = new Glide('.slider-artigos', configSliderArtigos);
 sliderArtigos.mount();
