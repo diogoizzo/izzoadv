@@ -849,6 +849,19 @@
             line-height: 20px;
         }
         
+        .slider-artigos {
+            position: relative;
+            width: 100%;
+        }
+        
+        .glide__arrow>button>img {
+            height: 20px;
+        }
+        
+        .glide__slides {
+            padding-bottom: 15px;
+        }
+        
         .box-artigos {
             margin-top: 40px;
             height: inherit;
@@ -943,6 +956,7 @@
         .marcadores {
             width: 85%;
             margin: 0 auto;
+            margin-top: 25px;
             justify-content: space-between;
         }
         
@@ -979,6 +993,8 @@
             box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
             width: 1.8vh;
             height: 1.8vh;
+            outline: none;
+            border: none;
         }
         
         #todos-artigos {

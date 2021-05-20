@@ -212,3 +212,16 @@ function fecharInformações(obj) {
 }
 //Fim - menu
 //Inicio Slider
+//Slider principal
+
+//fim do slider principal
+
+//slider artigos
+
+const configSliderArtigos = {
+    type: 'carousel',
+    autoplay: 6000
+};
+const sliderArtigos = new Glide('.slider-artigos', configSliderArtigos);
+sliderArtigos.mount();
+//fim do slider artigos
