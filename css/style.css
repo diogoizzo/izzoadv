@@ -953,14 +953,7 @@
             margin-right: 5vw;
         }
         
-        .marcadores {
-            width: 85%;
-            margin: 0 auto;
-            margin-top: 25px;
-            justify-content: space-between;
-        }
-        
-        .marcadores>button {
+        .glide__arrows button {
             display: inline-flex;
             background-color: #d9d9d9;
             justify-content: center;
@@ -976,8 +969,15 @@
             -o-border-radius: 16vw;
         }
         
-        .marcadores>button>img {
+        .controles img {
             height: 65%;
+        }
+        
+        .controles {
+            width: 85%;
+            margin: 0 auto;
+            margin-top: 25px;
+            justify-content: space-between;
         }
         
         .pontos {
@@ -995,6 +995,15 @@
             height: 1.8vh;
             outline: none;
             border: none;
+        }
+        
+        .glide__bullet--active {
+            background-color: #b1b1b1;
+            transition: background-color 0.5s ease-in;
+            -webkit-transition: background-color 0.5s ease-in;
+            -moz-transition: background-color 0.5s ease-in;
+            -ms-transition: background-color 0.5s ease-in;
+            -o-transition: background-color 0.5s ease-in;
         }
         
         #todos-artigos {

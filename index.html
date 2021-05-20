@@ -458,8 +458,10 @@
                         </li>
                     </ul>
                 </div>
-                <div class="glide__arrows linha marcadores" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./img/menor.svg" alt="artigo anterior"></button>
+                <div class="linha controles">
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="./img/menor.svg" alt="artigo anterior"></button>
+                    </div>
                     <div class="glide__bullets pontos" data-glide-el="controls[nav]">
                         <button class="glide__bullet ponto" data-glide-dir="=0"></button>
                         <button class="glide__bullet ponto" data-glide-dir="=1"></button>
@@ -470,8 +472,12 @@
                         <button class="glide__bullet ponto" data-glide-dir="=6"></button>
                         <button class="glide__bullet ponto" data-glide-dir="=7"></button>
                     </div>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./img/maior.svg" alt="próximo artigo"></button>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="./img/maior.svg" alt="próximo artigo"></button>
+                    </div>
                 </div>
+
+            </div>
             </div>
             <div class="linha">
                 <button id="todos-artigos">Todos os artigos</button>
