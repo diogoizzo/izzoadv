@@ -224,7 +224,40 @@ const configSliderPrincipal = {
     dragThreshold: false
 };
 
+const sld1Titulo = document.getElementById('sld1-titulo');
+const sld2SubTitulo = document.getElementById('sld1-subtitulo');
+const sld1btn = document.getElementById('btn-servicos');
+
 const sliderPrincipal = new Glide('.slider-principal', configSliderPrincipal);
+
+sliderPrincipal.on('build.after', function() {
+    sld1Titulo.classList.toggle('in-right');
+    sld2SubTitulo.classList.toggle('in-left');
+    sld1btn.classList.toggle('fade-in');
+});
+
+
+
+sliderPrincipal.on('run.after', function() {
+    switch (sliderPrincipal.index) {
+        case 0:
+            sld1Titulo.classList.toggle('in-right');
+            sld2SubTitulo.classList.toggle('in-left');
+            sld1btn.classList.toggle('fade-in')
+            console.log(sliderPrincipal.index);
+            break;
+        case 1:
+            sld1Titulo.classList.toggle('in-right');
+            sld2SubTitulo.classList.toggle('in-left');
+            sld1btn.classList.toggle('fade-in')
+            console.log(sliderPrincipal.index);
+            break;
+        case 2:
+            console.log(sliderPrincipal.index);
+            break;
+    }
+});
+
 sliderPrincipal.mount();
 
 //fim do slider principal
