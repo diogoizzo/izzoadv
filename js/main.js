@@ -227,15 +227,12 @@ const configSliderPrincipal = {
 const sld1Titulo = document.getElementById('sld1-titulo');
 const sld1SubTitulo = document.getElementById('sld1-subtitulo');
 const sld1btn = document.getElementById('btn-sld1');
-
 const sld2Titulo = document.getElementById('sld2-titulo');
 const sld2SubTitulo = document.getElementById('sld2-subtitulo');
 const sld2btn = document.getElementById('btn-sld2');
-
 const sld3Titulo = document.getElementById('sld3-titulo');
 const sld3SubTitulo = document.getElementById('sld3-subtitulo');
 const sld3btn = document.getElementById('btn-sld3');
-
 const sliderPrincipal = new Glide('.slider-principal', configSliderPrincipal);
 
 sliderPrincipal.on('build.after', function() {
@@ -243,9 +240,6 @@ sliderPrincipal.on('build.after', function() {
     sld1SubTitulo.classList.add('in-left');
     sld1btn.classList.add('fade-in');
 });
-
-/* sliderPrincipal.on('run.start') */
-
 
 sliderPrincipal.on('run.after', function() {
     switch (sliderPrincipal.index) {

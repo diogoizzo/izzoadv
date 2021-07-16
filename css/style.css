@@ -517,7 +517,7 @@
             .out-right {
                 position: relative;
                 font-family: izzo1-semibold, sans-serif;
-                font-size: 45px;
+                font-size: 40px;
                 color: #ffffff;
                 right: 60%;
                 opacity: 0;
@@ -533,7 +533,7 @@
                 font-family: izzo1-regular, sans-serif;
                 color: #ffffff;
                 margin-top: 40px;
-                font-size: 25px;
+                font-size: 20px;
                 opacity: 0;
                 left: 60%;
                 transition: left 0.7s ease-in, opacity 1s ease-in 0.3s;
