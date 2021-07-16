@@ -244,7 +244,7 @@ sliderPrincipal.on('build.after', function() {
     sld1btn.classList.add('fade-in');
 });
 
-sliderPrincipal.on('run.start')
+/* sliderPrincipal.on('run.start') */
 
 
 sliderPrincipal.on('run.after', function() {
