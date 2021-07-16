@@ -216,7 +216,7 @@ function fecharInformações(obj) {
 
 const configSliderPrincipal = {
     type: 'carousel',
-    autoplay: 5000,
+    /* autoplay: 5000, */
     gap: 0,
     hoverpause: false,
     keyboard: false,
@@ -239,40 +239,41 @@ const sld3btn = document.getElementById('btn-sld3');
 const sliderPrincipal = new Glide('.slider-principal', configSliderPrincipal);
 
 sliderPrincipal.on('build.after', function() {
-    sld1Titulo.classList.toggle('in-right');
-    sld1SubTitulo.classList.toggle('in-left');
-    sld1btn.classList.toggle('fade-in');
+    sld1Titulo.classList.add('in-right');
+    sld1SubTitulo.classList.add('in-left');
+    sld1btn.classList.add('fade-in');
 });
 
+sliderPrincipal.on('run.start')
 
 
 sliderPrincipal.on('run.after', function() {
     switch (sliderPrincipal.index) {
         case 0:
-            sld3Titulo.classList.toggle('in-right');
-            sld3SubTitulo.classList.toggle('in-left');
-            sld3btn.classList.toggle('fade-in');
-            sld1Titulo.classList.toggle('in-right');
-            sld1SubTitulo.classList.toggle('in-left');
-            sld1btn.classList.toggle('fade-in');
+            sld3Titulo.classList.remove('in-right');
+            sld3SubTitulo.classList.remove('in-left');
+            sld3btn.classList.remove('fade-in');
+            sld1Titulo.classList.add('in-right');
+            sld1SubTitulo.classList.add('in-left');
+            sld1btn.classList.add('fade-in');
             console.log(sliderPrincipal.index);
             break;
         case 1:
-            sld1Titulo.classList.toggle('in-right');
-            sld1SubTitulo.classList.toggle('in-left');
-            sld1btn.classList.toggle('fade-in');
-            sld2Titulo.classList.toggle('in-right');
-            sld2SubTitulo.classList.toggle('in-left');
-            sld2btn.classList.toggle('fade-in');
+            sld1Titulo.classList.remove('in-right');
+            sld1SubTitulo.classList.remove('in-left');
+            sld1btn.classList.remove('fade-in');
+            sld2Titulo.classList.add('in-right');
+            sld2SubTitulo.classList.add('in-left');
+            sld2btn.classList.add('fade-in');
             console.log(sliderPrincipal.index);
             break;
         case 2:
-            sld2Titulo.classList.toggle('in-right');
-            sld2SubTitulo.classList.toggle('in-left');
-            sld2btn.classList.toggle('fade-in');
-            sld3Titulo.classList.toggle('in-right');
-            sld3SubTitulo.classList.toggle('in-left');
-            sld3btn.classList.toggle('fade-in');
+            sld2Titulo.classList.remove('in-right');
+            sld2SubTitulo.classList.remove('in-left');
+            sld2btn.classList.remove('fade-in');
+            sld3Titulo.classList.add('in-right');
+            sld3SubTitulo.classList.add('in-left');
+            sld3btn.classList.add('fade-in');
             console.log(sliderPrincipal.index);
             break;
     }
