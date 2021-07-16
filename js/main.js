@@ -216,7 +216,7 @@ function fecharInformações(obj) {
 
 const configSliderPrincipal = {
     type: 'carousel',
-    /* autoplay: 5000, */
+    autoplay: 5000,
     gap: 0,
     hoverpause: false,
     keyboard: false,
