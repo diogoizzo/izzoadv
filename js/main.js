@@ -250,7 +250,6 @@ sliderPrincipal.on('run.after', function() {
             sld1Titulo.classList.add('in-right');
             sld1SubTitulo.classList.add('in-left');
             sld1btn.classList.add('fade-in');
-            console.log(sliderPrincipal.index);
             break;
         case 1:
             sld1Titulo.classList.remove('in-right');
@@ -259,7 +258,6 @@ sliderPrincipal.on('run.after', function() {
             sld2Titulo.classList.add('in-right');
             sld2SubTitulo.classList.add('in-left');
             sld2btn.classList.add('fade-in');
-            console.log(sliderPrincipal.index);
             break;
         case 2:
             sld2Titulo.classList.remove('in-right');
@@ -268,7 +266,6 @@ sliderPrincipal.on('run.after', function() {
             sld3Titulo.classList.add('in-right');
             sld3SubTitulo.classList.add('in-left');
             sld3btn.classList.add('fade-in');
-            console.log(sliderPrincipal.index);
             break;
     }
 });
