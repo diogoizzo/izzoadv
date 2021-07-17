@@ -48,55 +48,57 @@
                 </label>
                 </div>
             </div>
-            <nav>
-                <ul class="menu-items">
-                    <li>Home</li>
-                    <li>Sobre</li>
-                    <li>
-                        <label id="label-serviços">
-                            Serviços
-                            <input type="checkbox" id="input-serviços" onchange="expandir(this)" aria-label="Principais serviços de advocacia">
-                        </label>
-                        <ul class="serviços">
-                            <li>Divórcio</li>
-                            <li>Inventário</li>
-                            <li>Usucapião</li>
-                            <li>Contratos</li>
-                            <li>Família</li>
-                            <li>Consumidor</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label id="label-artigos">
-                            Artigos
-                            <input type="checkbox" id="input-artigos" onchange="expandir(this)" aria-label="Artigos sobre advocacia extrajudicia, divórcio, usucapião, contratos, direito de família e direitos do consumidor">
-                        </label>
-                        <ul class="artigos">
-                            <li>Divórcio</li>
-                            <li>Inventário</li>
-                            <li>Usucapião</li>
-                            <li>Contratos</li>
-                            <li>Família</li>
-                            <li>Consumidor</li>
-                            <li>Todos</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <label id="label-duvidas">
-                            Dúvidas
-                            <input type="checkbox" id="input-duvidas" onchange="expandir(this)" aria-label="Artigos sobre advocacia extrajudicia, divórcio, usucapião, contratos, direito de família e direitos do consumidor">
-                        </label>
-                        <ul class="duvidas">
-                            <li>Divórcio</li>
-                            <li>Inventário</li>
-                            <li>Usucapião</li>
-                            <li>Contratos</li>
-                            <li>Todos</li>
-                        </ul>
-                    </li>
-                    <li>Contato</li>
-                </ul>
-            </nav>
+            <div class="menu-container">
+                <nav>
+                    <ul class="menu-items">
+                        <li>Home</li>
+                        <li>Sobre</li>
+                        <li>
+                            <label id="label-serviços">
+                                Serviços
+                                <input type="checkbox" id="input-serviços" onchange="expandir(this)" aria-label="Principais serviços de advocacia">
+                            </label>
+                            <ul class="serviços">
+                                <li>Divórcio</li>
+                                <li>Inventário</li>
+                                <li>Usucapião</li>
+                                <li>Contratos</li>
+                                <li>Família</li>
+                                <li id="li-consumidor">Consumidor</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label id="label-artigos">
+                                Artigos
+                                <input type="checkbox" id="input-artigos" onchange="expandir(this)" aria-label="Artigos sobre advocacia extrajudicia, divórcio, usucapião, contratos, direito de família e direitos do consumidor">
+                            </label>
+                            <ul class="artigos">
+                                <li>Divórcio</li>
+                                <li>Inventário</li>
+                                <li>Usucapião</li>
+                                <li>Contratos</li>
+                                <li>Família</li>
+                                <li>Consumidor</li>
+                                <li>Todos</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <label id="label-duvidas">
+                                Dúvidas
+                                <input type="checkbox" id="input-duvidas" onchange="expandir(this)" aria-label="Artigos sobre advocacia extrajudicia, divórcio, usucapião, contratos, direito de família e direitos do consumidor">
+                            </label>
+                            <ul class="duvidas">
+                                <li>Divórcio</li>
+                                <li>Inventário</li>
+                                <li>Usucapião</li>
+                                <li>Contratos</li>
+                                <li>Todos</li>
+                            </ul>
+                        </li>
+                        <li>Contato</li>
+                    </ul>
+                </nav>
+            </div>
             <div class="informações">
                 <div id="telefones" class="display-none">
                     <div class="telefone-título">

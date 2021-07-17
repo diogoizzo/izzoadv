@@ -49,11 +49,14 @@ for (let btn of btnsSaiba) {
 function remover(obj1, label1, obj2, label2, obj3, label3) {
     obj1.classList.remove('menu-aberto');
     label1.classList.remove('menu-item-ativo');
+    label1.classList.remove('btn-apertado');
     obj2.classList.remove('menu-aberto');
     label2.classList.remove('menu-item-ativo');
+    label2.classList.remove('btn-apertado');
     if (obj3) {
         obj3.classList.remove('menu-aberto');
         label3.classList.remove('menu-item-ativo');
+        label3.classList.remove('btn-apertado');
     }
 }
 
@@ -80,38 +83,134 @@ function recolherMenu() {
 }
 
 function expandir(obj) {
-    if (!servicos.classList.contains('menu-aberto') && !artigos.classList.contains('menu-aberto') && !duvidas.classList.contains('menu-aberto')) {
+    if (!informacoes.classList.contains('informacoes-aberto')) {
+        if (!servicos.classList.contains('menu-aberto') && !artigos.classList.contains('menu-aberto') && !duvidas.classList.contains('menu-aberto')) {
+            if (obj === inputServiços) {
+                if (window.innerWidth < 800){
+                    labelServiços.classList.toggle('menu-item-ativo');
+                }else{
+                    labelServiços.classList.toggle('btn-apertado');
+                }
+                servicos.classList.toggle('menu-aberto');
+                console.log(window.innerWidth);
+            } else if (obj === inputArtigos) {
+                if (window.innerWidth < 800){
+                    labelArtigos.classList.toggle('menu-item-ativo');
+                }else{
+                    labelArtigos.classList.toggle('btn-apertado');
+                }
+                artigos.classList.toggle('menu-aberto');
+            } else if (obj === inputDuvidas) {
+                if (window.innerWidth < 800){
+                    labelDuvidas.classList.toggle('menu-item-ativo');
+                }else{
+                    labelDuvidas.classList.toggle('btn-apertado');
+                }
+                duvidas.classList.toggle('menu-aberto');
+            }
+            return;
+        } 
         if (obj === inputServiços) {
-            labelServiços.classList.toggle('menu-item-ativo');
-            servicos.classList.toggle('menu-aberto');
+            remover(artigos, labelArtigos, duvidas, labelDuvidas);
+            setTimeout(() => {
+                if (window.innerWidth < 800){
+                    labelServiços.classList.toggle('menu-item-ativo');
+                }else{
+                    labelServiços.classList.toggle('btn-apertado');
+                }
+                servicos.classList.toggle('menu-aberto');
+            }, 700);
         } else if (obj === inputArtigos) {
-            labelArtigos.classList.toggle('menu-item-ativo');
-            artigos.classList.toggle('menu-aberto');
+            remover(servicos, labelServiços, duvidas, labelDuvidas);
+            setTimeout(() => {
+                if (window.innerWidth < 800){
+                    labelArtigos.classList.toggle('menu-item-ativo');
+                }else{
+                    labelArtigos.classList.toggle('btn-apertado');
+                }
+                artigos.classList.toggle('menu-aberto');
+            }, 700);
         } else if (obj === inputDuvidas) {
-            labelDuvidas.classList.toggle('menu-item-ativo');
-            duvidas.classList.toggle('menu-aberto');
+            remover(servicos, labelServiços, artigos, labelArtigos);
+            setTimeout(() => {
+                if (window.innerWidth < 800){
+                    labelDuvidas.classList.toggle('menu-item-ativo');
+                }else{
+                    labelDuvidas.classList.toggle('btn-apertado');
+                }
+                duvidas.classList.toggle('menu-aberto');
+            }, 700);
         }
-        return;
-    }
-    if (obj === inputServiços) {
-        remover(artigos, labelArtigos, duvidas, labelDuvidas);
-        setTimeout(() => {
-            labelServiços.classList.toggle('menu-item-ativo');
-            servicos.classList.toggle('menu-aberto');
-        }, 700);
-    } else if (obj === inputArtigos) {
-        remover(servicos, labelServiços, duvidas, labelDuvidas);
-        setTimeout(() => {
-            labelArtigos.classList.toggle('menu-item-ativo');
-            artigos.classList.toggle('menu-aberto');
-        }, 700);
-    } else if (obj === inputDuvidas) {
-        remover(servicos, labelServiços, artigos, labelArtigos);
-        setTimeout(() => {
-            labelDuvidas.classList.toggle('menu-item-ativo');
-            duvidas.classList.toggle('menu-aberto');
-        }, 700);
-    }
+        
+    } else {
+        const itemAberto = verificaInfoAberta();
+        itemAberto.parentElement.classList.remove('btn-apertado');
+        const esperarRecolherInfo = () => new Promise((resolve, reject) => {
+            informacoes.classList.remove('informacoes-aberto');
+            setTimeout(() => {
+                resolve();
+            }, 1300);
+        });
+        esperarRecolherInfo().then(() => {
+            if (!servicos.classList.contains('menu-aberto') && !artigos.classList.contains('menu-aberto') && !duvidas.classList.contains('menu-aberto')) {
+                if (obj === inputServiços) {
+                    if (window.innerWidth < 800){
+                        labelServiços.classList.toggle('menu-item-ativo');
+                    }else{
+                        labelServiços.classList.toggle('btn-apertado');
+                    }
+                    servicos.classList.toggle('menu-aberto');
+                    console.log(window.innerWidth);
+                } else if (obj === inputArtigos) {
+                    if (window.innerWidth < 800){
+                        labelArtigos.classList.toggle('menu-item-ativo');
+                    }else{
+                        labelArtigos.classList.toggle('btn-apertado');
+                    }
+                    artigos.classList.toggle('menu-aberto');
+                } else if (obj === inputDuvidas) {
+                    if (window.innerWidth < 800){
+                        labelDuvidas.classList.toggle('menu-item-ativo');
+                    }else{
+                        labelDuvidas.classList.toggle('btn-apertado');
+                    }
+                    duvidas.classList.toggle('menu-aberto');
+                }
+                return;
+            } 
+            if (obj === inputServiços) {
+                remover(artigos, labelArtigos, duvidas, labelDuvidas);
+                setTimeout(() => {
+                    if (window.innerWidth < 800){
+                        labelServiços.classList.toggle('menu-item-ativo');
+                    }else{
+                        labelServiços.classList.toggle('btn-apertado');
+                    }
+                    servicos.classList.toggle('menu-aberto');
+                }, 700);
+            } else if (obj === inputArtigos) {
+                remover(servicos, labelServiços, duvidas, labelDuvidas);
+                setTimeout(() => {
+                    if (window.innerWidth < 800){
+                        labelArtigos.classList.toggle('menu-item-ativo');
+                    }else{
+                        labelArtigos.classList.toggle('btn-apertado');
+                    }
+                    artigos.classList.toggle('menu-aberto');
+                }, 700);
+            } else if (obj === inputDuvidas) {
+                remover(servicos, labelServiços, artigos, labelArtigos);
+                setTimeout(() => {
+                    if (window.innerWidth < 800){
+                        labelDuvidas.classList.toggle('menu-item-ativo');
+                    }else{
+                        labelDuvidas.classList.toggle('btn-apertado');
+                    }
+                    duvidas.classList.toggle('menu-aberto');
+                }, 700);
+            }
+        });
+    }   
 }
 
 function expandirMenu() {
@@ -169,7 +268,7 @@ function alternaInfo(obj) {
 }
 
 function expandirInfo(obj) {
-    if (menu.classList.contains('menu-principal-aberto')) {
+    if (menu.classList.contains('menu-principal-aberto') || servicos.classList.contains('menu-aberto') || artigos.classList.contains('menu-aberto') || duvidas.classList.contains('menu-aberto')) {
         const esperaRecolherMenu = (obj) => new Promise((resolve, reject) => {
             recolherMenu();
             btnMenu.classList.remove('btn-apertado');
