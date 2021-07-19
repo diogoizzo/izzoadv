@@ -1566,4 +1566,7 @@
                 #li-consumidor{
                     padding-bottom: 5px;
                 }
+                .menu{
+                    display:none;
+                }
             }
