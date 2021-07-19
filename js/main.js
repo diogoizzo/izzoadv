@@ -112,34 +112,37 @@ function expandir(obj) {
         } 
         if (obj === inputServiços) {
             remover(artigos, labelArtigos, duvidas, labelDuvidas);
-            setTimeout(() => {
-                if (window.innerWidth < 800){
+            if (window.innerWidth < 800){
+                setTimeout(() => {
                     labelServiços.classList.toggle('menu-item-ativo');
-                }else{
-                    labelServiços.classList.toggle('btn-apertado');
-                }
+                    servicos.classList.toggle('menu-aberto');
+                }, 700);
+            } else{
+                labelServiços.classList.toggle('btn-apertado');
                 servicos.classList.toggle('menu-aberto');
-            }, 700);
+            }
         } else if (obj === inputArtigos) {
             remover(servicos, labelServiços, duvidas, labelDuvidas);
-            setTimeout(() => {
-                if (window.innerWidth < 800){
+            if (window.innerWidth < 800){
+                setTimeout(() => {
                     labelArtigos.classList.toggle('menu-item-ativo');
-                }else{
-                    labelArtigos.classList.toggle('btn-apertado');
-                }
+                    artigos.classList.toggle('menu-aberto');
+                }, 700);
+            } else{
+                labelArtigos.classList.toggle('btn-apertado');
                 artigos.classList.toggle('menu-aberto');
-            }, 700);
+            }
         } else if (obj === inputDuvidas) {
             remover(servicos, labelServiços, artigos, labelArtigos);
-            setTimeout(() => {
-                if (window.innerWidth < 800){
+            if (window.innerWidth < 800){
+                setTimeout(() => {
                     labelDuvidas.classList.toggle('menu-item-ativo');
-                }else{
-                    labelDuvidas.classList.toggle('btn-apertado');
-                }
+                    duvidas.classList.toggle('menu-aberto');
+                }, 700);
+            } else{
+                labelDuvidas.classList.toggle('btn-apertado');
                 duvidas.classList.toggle('menu-aberto');
-            }, 700);
+            }
         }
         
     } else {
