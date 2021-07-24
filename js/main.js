@@ -152,10 +152,9 @@ function expandir(obj) {
             informacoes.classList.remove('informacoes-aberto');
             setTimeout(() => {
                 resolve();
-            }, 1300);
+            }, 1000);
         });
         esperarRecolherInfo().then(() => {
-            if (!servicos.classList.contains('menu-aberto') && !artigos.classList.contains('menu-aberto') && !duvidas.classList.contains('menu-aberto')) {
                 if (obj === inputServiços) {
                     if (window.innerWidth < 800){
                         labelServiços.classList.toggle('menu-item-ativo');
@@ -180,38 +179,6 @@ function expandir(obj) {
                     duvidas.classList.toggle('menu-aberto');
                 }
                 return;
-            } 
-            if (obj === inputServiços) {
-                remover(artigos, labelArtigos, duvidas, labelDuvidas);
-                setTimeout(() => {
-                    if (window.innerWidth < 800){
-                        labelServiços.classList.toggle('menu-item-ativo');
-                    }else{
-                        labelServiços.classList.toggle('btn-apertado');
-                    }
-                    servicos.classList.toggle('menu-aberto');
-                }, 700);
-            } else if (obj === inputArtigos) {
-                remover(servicos, labelServiços, duvidas, labelDuvidas);
-                setTimeout(() => {
-                    if (window.innerWidth < 800){
-                        labelArtigos.classList.toggle('menu-item-ativo');
-                    }else{
-                        labelArtigos.classList.toggle('btn-apertado');
-                    }
-                    artigos.classList.toggle('menu-aberto');
-                }, 700);
-            } else if (obj === inputDuvidas) {
-                remover(servicos, labelServiços, artigos, labelArtigos);
-                setTimeout(() => {
-                    if (window.innerWidth < 800){
-                        labelDuvidas.classList.toggle('menu-item-ativo');
-                    }else{
-                        labelDuvidas.classList.toggle('btn-apertado');
-                    }
-                    duvidas.classList.toggle('menu-aberto');
-                }, 700);
-            }
         });
     }   
 }

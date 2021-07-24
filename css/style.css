@@ -573,6 +573,7 @@
                 box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
                 background-color: rgb(113, 24, 23);
                 width: 200px;
+                height: 30px;
                 margin: 0 auto;
                 margin-top: 40px;
                 border: none;
@@ -1569,4 +1570,8 @@
                 .menu{
                     display:none;
                 }
+                nav>ul>li>ul>li:hover{
+                    background-color: rgb(190, 190, 190);;
+                }
+                
             }
