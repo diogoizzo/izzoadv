@@ -695,7 +695,6 @@
             #divisor-diferenciais>h2>strong {
                 display: inline-block;
                 color: #d9d9d9;
-                font-family: izzo1-semibold;
                 font-size: max(6vw, 20px);
                 margin-top: 2%;
             }
@@ -1573,5 +1572,78 @@
                 nav>ul>li>ul>li:hover{
                     background-color: rgb(190, 190, 190);;
                 }
-                
+                .out-right{
+                    font-size: 50px;
+                }
+                .out-left{
+                    font-size: 25px;
+                }
+                h1{
+                    font-size: 40px;
+                }
+                h2{
+                    font-size: 30px;
+                }
+                .sobre>p{
+                    font-size: 20px;
+                }
+                #tipos-atendimento{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 30px 30px;
+                    margin-top: 60px;
+                }
+                .box-tipos-atendimento{
+                    width: 45%;
+                    margin: unset;
+                }
+                .box-tipos-atendimento>p{
+                    font-size: 18px;
+                }
+                .box-tipos-atendimento>img{
+                    width: unset;
+                    height: 50px;
+                }
+                .box-tipos-atendimento>h2{
+                    font-size: 24px;
+                }
+                #divisor-diferenciais>h2{
+                    font-size: 25px;
+                }
+                #divisor-diferenciais>h2>strong{
+                    font-size: 40px;
+                }
+                .título-diferenciais{
+                    font-size: 40px;
+                }
+                .box-diferenciais>p{
+                    font-size: 20px;
+                }
+                .indicador{
+                    font-size: 95px;
+                }
+                #todos-serviços{
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 30px 30px;
+                }
+                .divisor-serviços{
+                    margin: 6% auto;
+                }
+                .container-serviços h2{
+                    font-size: 40px;
+                }
+                .box-serviços{
+                    width: 45%;
+                    margin: unset;
+                }
+                .box-texto{
+                    height: 130px;
+                }
+                .box-texto>h3{
+                    font-size: 30px;
+                }
+                .box-texto>button{
+                    font-size: 18px;
+                }
             }
