@@ -347,7 +347,14 @@ sliderPrincipal.mount();
 
 const configSliderArtigos = {
     type: 'carousel',
-    autoplay: 6000,
+    gap:0,
+    /* autoplay: 6000, */
+    perView:2,
+    breakpoints: {
+        1200:{
+            perView:1
+        }
+    }
 };
 const sliderArtigos = new Glide('.slider-artigos', configSliderArtigos);
 sliderArtigos.mount();

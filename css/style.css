@@ -1616,7 +1616,7 @@
                 .título-diferenciais{
                     font-size: 40px;
                 }
-                .box-diferenciais>p{
+                .box-diferenciais>p, #copy-artigos>p, .dúvidas>p,#consulta>p{
                     font-size: 20px;
                 }
                 .indicador{
@@ -1630,7 +1630,7 @@
                 .divisor-serviços{
                     margin: 6% auto;
                 }
-                .container-serviços h2{
+                .container-serviços h2, #copy-artigos h2, .dúvidas h2, #consulta h2{
                     font-size: 40px;
                 }
                 .box-serviços{
@@ -1640,10 +1640,122 @@
                 .box-texto{
                     height: 130px;
                 }
-                .box-texto>h3{
+                .box-texto>h3, .form-contato>h3{
                     font-size: 30px;
                 }
                 .box-texto>button{
                     font-size: 18px;
                 }
+                #copy-artigos>p{
+                    margin-top: 14px;
+                }
+                .box-artigos{
+                    margin: 0 auto; 
+                    width: 415px;
+                }
+                .slider-artigos{
+                    margin-top: 5%;
+                }
+                .artigo h3{
+                    font-size: 30px;
+                }
+                .glide__arrows button{
+                    height: 65px;
+                    width: 65px;
+                    position: relative;
+                    top: -300px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+                .controles{
+                    margin-top: 10px;
+                }
+                .controles img{
+                    width: 25%;
+                }
+                #todos-artigos{
+                    height: 40px;
+                    margin-top: 10px;
+                    font-size: 17px;
+                    padding: 5px 23px;
+                }
+                .nm-input, #nm-input-text{
+                    height: 35px;
+                }
+                #nm-sub{
+                    font-size: 17px;
+                    width: 160px;
+                }
+                .form-contato{
+                    width: 80%;
+                    margin: 0 auto;
+                    margin-top: 35px !important;
+                }
+                #logo{
+                    width: 310px;
+                }
+                .form-contato>button{
+                    font-size: 20px;
+                    width: 140px;
+                }
             }
+            @media screen and (min-width: 1200px){
+                .redondo{
+                    height: 32px;
+                    width: 32px;
+                }
+                .box-tipos-atendimento{
+                    width: 22%;
+                }
+                .out-right{
+                    font-size: 65px;
+                }
+                .out-left{
+                    font-size: 30px;
+                }
+                .btns-slider{
+                    font-size: 18px;
+                    width: 235px;
+                    font-weight: bold;
+                    height: 40px;
+                }
+                /* #tipos-atendimento{
+                    padding: 0 5%;
+                } */
+                #divisor-diferenciais>h2{
+                    font-size: 32px;
+                }
+                #divisor-diferenciais>h2>strong{
+                    font-size: 45px;
+                    margin-top: 10px;
+                }
+                .coluna-diferenciais{
+                    flex-direction: row;
+                }
+                .título-diferenciais{
+                    margin-left: -50px;
+                }
+                .box-serviços{
+                    width: 30%;
+                }
+                .pontos{
+                    width: 30%;
+                }
+                .slider-artigos{
+                    width: 70%;
+                    margin: 30px auto 15px auto;
+                }
+                .box-artigos{
+                    margin-top: 15px;
+                    width: 85%;
+                }
+                .glide__arrow--left{
+                    left: -165px;
+                }
+                .glide__arrow--right{
+                    right: -165px;
+                }
+            }    
