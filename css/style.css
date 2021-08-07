@@ -139,8 +139,8 @@
             }
             
             .logo img {
-                width: 33%;
-                min-width: 45px;
+                width: 50px;
+                min-width: 50px;
             }
             
             .links-de-redes-sociais {
@@ -639,7 +639,7 @@
                 display: inline-block;
                 width: 85%;
                 margin: 0 auto;
-                margin-top: 7.5%;
+                margin-top: 45px;
                 padding: 4%;
                 background-color: lightcoral;
                 border-radius: 22px;
@@ -680,9 +680,9 @@
                 position: relative;
                 background-color: #711817;
                 text-align: center;
-                margin-top: 7.5%;
                 box-shadow: 0px 9px 17.1px 0.9px rgba(0, 0, 0, 0.41);
                 padding: 4%;
+                margin-top: 45px;
             }
             
             #divisor-diferenciais>h2 {
@@ -697,6 +697,12 @@
                 color: #d9d9d9;
                 font-size: max(6vw, 20px);
                 margin-top: 2%;
+            }
+
+            #frame-diferenciais{
+                background-color: #818181;
+                position: relative;
+                z-index: 10;
             }
             
             .box-título-diferencias {
@@ -744,7 +750,7 @@
                 z-index: 10;
                 margin-top: -6%;
                 justify-content: flex-start;
-                padding: 8% 0;
+                padding: 50px 4%;
                 -webkit-border-radius: 28px;
                 -moz-border-radius: 28px;
                 -ms-border-radius: 28px;
@@ -764,9 +770,14 @@
                 box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
                 height: 2px;
                 width: 85%;
-                margin: 8% auto;
+                margin: 35px auto;
             }
             
+            #todos-serviços{
+                max-width: 430px;
+                margin: 0 auto;
+            }
+
             .box-serviços {
                 position: relative;
                 border-radius: 22px;
@@ -859,7 +870,7 @@
             
             .box-texto>h3 {
                 margin: 20px auto;
-                font-size: max(6vw, 20px);
+                font-size: 30px;
                 color: #333333;
                 font-family: izzo1-semibold, serif;
             }
@@ -873,7 +884,7 @@
                 padding: 5%;
                 margin-bottom: 6%;
                 color: #d9d9d9;
-                font-size: 3.6vw;
+                font-size: 17px;
                 border: none;
                 height: 35px;
                 border-radius: 10vw;
@@ -933,8 +944,7 @@
                 font-family: izzo2-regular, serif;
                 margin-top: 4%;
                 color: #ffffff;
-                font-size: max(4vw, 16px);
-                line-height: 20px;
+                font-size: 20px;
             }
             
             .slider-artigos {
@@ -953,7 +963,8 @@
             .box-artigos {
                 margin-top: 40px;
                 height: inherit;
-                min-height: 480px;
+                min-height: 550px;
+                max-width: 450px;
             }
             
             .artigo {
@@ -982,7 +993,7 @@
             
             .artigo>h3 {
                 margin: 20px auto;
-                font-size: max(6vw, 20px);
+                font-size: 30px;
                 color: #333333;
                 font-family: izzo1-semibold, serif
             }
@@ -1046,6 +1057,7 @@
                 background-color: #d9d9d9;
                 justify-content: center;
                 align-items: center;
+                max-width: 110px;
                 border: none;
                 height: 4vh;
                 width: 18vw;
@@ -1066,6 +1078,7 @@
                 margin: 0 auto;
                 margin-top: 25px;
                 justify-content: space-between;
+                max-width: 450px;
             }
             
             .pontos {
@@ -1234,15 +1247,15 @@
                 padding-bottom: 30px;
             }
             
-            #consulta>h2,
-            #consulta>p {
+            #consulta h2,
+            #consulta p {
                 color: #ffffff;
             }
             
-            #consulta>p {
+            #consulta p {
                 font-family: izzo2-regular, serif;
                 text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.30);
-                font-size: max(3vw, 15px);
+                font-size: 18px;
                 margin: 10px 0;
                 margin-top: 40px;
             }
@@ -1305,7 +1318,7 @@
                 width: 85%;
                 height: 1px;
                 background-color: rgb(78 75 75 / 25%);
-                margin: 15px auto;
+                margin: 30px auto;
             }
             
             .form-contato>input {
@@ -1334,10 +1347,9 @@
                 display: inline-flex;
                 justify-content: center;
                 align-items: center;
-                padding: 4%;
-                margin-bottom: 6%;
+                padding: 3%;
                 color: #d9d9d9;
-                font-size: 3.6vw;
+                font-size: 20px;
                 border: none;
                 height: 35px;
                 width: 40%;
@@ -1428,6 +1440,10 @@
             .elev {
                 position: relative;
                 z-index: 2;
+            }
+
+            #tipos-atendimento{
+                margin: 0 auto;
             }
             /*media queries*/
             /*Tablet*/
@@ -1543,9 +1559,6 @@
                     height: 28px;
                     width: 28px;
                 }
-                .logo img{
-                    width: 36%;
-                }
                 .informações{
                     margin-top: -15px;
                 }
@@ -1591,7 +1604,8 @@
                     flex-direction: row;
                     flex-wrap: wrap;
                     gap: 30px 30px;
-                    margin-top: 60px;
+                    margin: 60px auto;
+                    max-width: 980px;
                 }
                 .box-tipos-atendimento{
                     width: 45%;
@@ -1626,9 +1640,11 @@
                     flex-direction: row;
                     flex-wrap: wrap;
                     gap: 30px 30px;
+                    max-width: 850px;
+                    margin: 0 auto;
                 }
                 .divisor-serviços{
-                    margin: 6% auto;
+                    margin: 45px auto;
                 }
                 .container-serviços h2, #copy-artigos h2, .dúvidas h2, #consulta h2{
                     font-size: 40px;
@@ -1650,8 +1666,8 @@
                     margin-top: 14px;
                 }
                 .box-artigos{
-                    margin: 0 auto; 
-                    width: 415px;
+                    margin: 8px auto; 
+                    width: 490px;
                 }
                 .slider-artigos{
                     margin-top: 5%;
@@ -1663,7 +1679,7 @@
                     height: 65px;
                     width: 65px;
                     position: relative;
-                    top: -300px;
+                    top: -345px;
                     border-radius: 50%;
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
@@ -1672,6 +1688,7 @@
                 }
                 .controles{
                     margin-top: 10px;
+                    max-width: 800px;
                 }
                 .controles img{
                     width: 25%;
@@ -1688,11 +1705,13 @@
                 #nm-sub{
                     font-size: 17px;
                     width: 160px;
+                    margin-top: 20px;
                 }
                 .form-contato{
-                    width: 80%;
+                    width: 70%;
                     margin: 0 auto;
                     margin-top: 35px !important;
+                    max-width: 550px;
                 }
                 #logo{
                     width: 310px;
@@ -1701,14 +1720,31 @@
                     font-size: 20px;
                     width: 140px;
                 }
+                .dúvidas{
+                    padding: 2%;
+                }
+                .pontos{
+                    width: 40%;
+                    max-width: 325px;
+                }
+                .dúvidas>p{
+                    padding: 10px 0;
+                }
+                #copy-artigos{
+                    padding: 3%;
+                }
             }
-            @media screen and (min-width: 1400px){
+            @media screen and (min-width: 1200px){
+                .controles{
+                    max-width: unset;
+                }
                 .redondo{
                     height: 32px;
                     width: 32px;
                 }
                 .box-tipos-atendimento{
                     width: 22%;
+                    padding: 30px;
                 }
                 .out-right{
                     font-size: 65px;
@@ -1722,9 +1758,9 @@
                     font-weight: bold;
                     height: 40px;
                 }
-                /* #tipos-atendimento{
-                    padding: 0 5%;
-                } */
+                #tipos-atendimento{
+                    max-width: 1600px;
+                }
                 #divisor-diferenciais>h2{
                     font-size: 32px;
                 }
@@ -1734,12 +1770,14 @@
                 }
                 .coluna-diferenciais{
                     flex-direction: row;
+                    padding: 0 6%;
                 }
                 .título-diferenciais{
                     margin-left: -50px;
                 }
                 .box-serviços{
                     width: 30%;
+                    max-width: 390px;
                 }
                 .pontos{
                     width: 30%;
@@ -1751,6 +1789,7 @@
                 .box-artigos{
                     margin-top: 15px;
                     width: 85%;
+                    max-width: 520px;
                 }
                 .glide__arrow--left{
                     left: -165px;
@@ -1758,4 +1797,27 @@
                 .glide__arrow--right{
                     right: -165px;
                 }
+                #todos-serviços{
+                    max-width: 1650px;
+                    gap: 30px 5%;
+                }
+                #sec-servicos{
+                    background-color: #818181;
+                }
+                .nm-input{
+                    width: 50%;
+                    margin-top: 10px;
+                }
+                #consulta{
+                    display: flex;
+                    flex-direction: row;
+                }
+                #consulta-texto{
+                    width: 80%;
+                    text-align: left;
+                    padding: 3%;
+                }      
+                #consulta form{
+                    width: 50%;
+                }     
             }    
