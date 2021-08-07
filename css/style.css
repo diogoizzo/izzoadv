@@ -384,7 +384,7 @@
             }
             
             .telefone-título h3 {
-                font-family: izzo1-semibold;
+                font-family: izzo1-semibold, sans-serif;
                 margin-left: 20px;
                 font-size: 16px;
             }
@@ -730,7 +730,7 @@
             
             .título-diferenciais {
                 font-size: max(6vw, 25px);
-                font-family: izzo1-semibold;
+                font-family: izzo1-semibold, sans-serif;
                 color: #ffff;
                 margin-left: min(-7vw, -30px);
                 margin-top: 1vw;
@@ -774,7 +774,7 @@
             }
             
             #todos-serviços{
-                max-width: 430px;
+                max-width: 500px;
                 margin: 0 auto;
             }
 
@@ -849,7 +849,7 @@
                 background-image: -webkit-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
                 background-image: -ms-linear-gradient( -64deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.2) 100%);
                 box-shadow: 0px -4px 5.46px 0.54px rgba(0, 0, 0, 0.1);
-                height: 120px;
+                height: 135px;
                 justify-content: flex-start;
                 align-items: center;
                 border-radius: 22px;
@@ -872,7 +872,7 @@
                 margin: 20px auto;
                 font-size: 30px;
                 color: #333333;
-                font-family: izzo1-semibold;
+                font-family: izzo1-semibold, sans-serif;
             }
             
             .box-texto>button {
@@ -995,7 +995,7 @@
                 margin: 20px auto;
                 font-size: 30px;
                 color: #333333;
-                font-family: izzo1-semibold, serif
+                font-family: izzo1-semibold, sans-serif;
             }
             
             .botões-artigos {
