@@ -730,7 +730,7 @@
             
             .título-diferenciais {
                 font-size: max(6vw, 25px);
-                font-family: izzo1-semibold, sans-serif;
+                font-family: izzo1-semibold;
                 color: #ffff;
                 margin-left: min(-7vw, -30px);
                 margin-top: 1vw;
@@ -872,7 +872,7 @@
                 margin: 20px auto;
                 font-size: 30px;
                 color: #333333;
-                font-family: izzo1-semibold, serif;
+                font-family: izzo1-semibold;
             }
             
             .box-texto>button {
