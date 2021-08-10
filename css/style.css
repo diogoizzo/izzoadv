@@ -771,6 +771,7 @@
             
             #todos-serviços {
                 margin: 0 auto;
+                max-width: 360px;
             }
             
             .box-serviços {
@@ -779,8 +780,8 @@
                 background-color: rgb(217, 217, 217);
                 box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
                 margin: 0 auto 8% auto;
-                min-height: 430px;
-                width: 85%;
+                min-height: 360px;
+                width: 90%;
                 z-index: 99;
                 -webkit-border-radius: 22px;
                 -moz-border-radius: 22px;
@@ -906,9 +907,8 @@
             
             .box-servico-texto>p {
                 color: #333333;
-                line-height: 130%;
                 font-family: izzo2-regular, serif;
-                font-size: 17px;
+                font-size: 14px;
             }
             
             .box-texto:hover {
@@ -986,7 +986,7 @@
             .box-artigos p {
                 font-family: izzo2-regular, serif;
                 line-height: 110%;
-                font-size: 17px;
+                font-size: 14px;
             }
             
             .artigo>h3 {
