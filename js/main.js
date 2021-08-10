@@ -1,4 +1,4 @@
-//Caputar Dom
+// Caputar Dom
 const artigos = document.querySelector('.artigos');
 const servicos = document.querySelector('.serviços');
 const duvidas = document.querySelector('.duvidas');
@@ -21,22 +21,22 @@ const btnMenu = document.querySelector('.btn-menu-mobile');
 const header = document.querySelector('header');
 const slider = document.querySelector('.slider');
 const btnsSaiba = document.querySelectorAll('.btnSaiba');
-//Fim da captura de Dom
-//Eventos
-//Captura de evento dos botões saiba mais
+// Fim da captura de Dom
+// Eventos
+// Captura de evento dos botões saiba mais
 for (let btn of btnsSaiba) {
     btn.parentElement.addEventListener('mouseenter', e => {
-        if (window.innerWidth < 450) {
+        if (window.innerWidth < 800) {
             btn.innerHTML = "Mais detalhes";
         }
     });
     btn.parentElement.addEventListener('mouseleave', e => {
-        if (window.innerWidth < 450) {
+        if (window.innerWidth < 800) {
             btn.innerHTML = "Saiba mais";
         }
     });
     btn.addEventListener('click', e => {
-        if (window.innerWidth < 450) {
+        if (window.innerWidth < 800) {
             if (e.target.parentElement.offsetHeight > 300) {
                 window.open('servicos.html', '_self');
                 e.target.innerHTML = "Saiba mais";
@@ -86,65 +86,65 @@ function expandir(obj) {
     if (!informacoes.classList.contains('informacoes-aberto')) {
         if (!servicos.classList.contains('menu-aberto') && !artigos.classList.contains('menu-aberto') && !duvidas.classList.contains('menu-aberto')) {
             if (obj === inputServiços) {
-                if (window.innerWidth < 800){
+                if (window.innerWidth < 800) {
                     labelServiços.classList.toggle('menu-item-ativo');
-                }else{
+                } else {
                     labelServiços.classList.toggle('btn-apertado');
                 }
                 servicos.classList.toggle('menu-aberto');
                 console.log(window.innerWidth);
             } else if (obj === inputArtigos) {
-                if (window.innerWidth < 800){
+                if (window.innerWidth < 800) {
                     labelArtigos.classList.toggle('menu-item-ativo');
-                }else{
+                } else {
                     labelArtigos.classList.toggle('btn-apertado');
                 }
                 artigos.classList.toggle('menu-aberto');
             } else if (obj === inputDuvidas) {
-                if (window.innerWidth < 800){
+                if (window.innerWidth < 800) {
                     labelDuvidas.classList.toggle('menu-item-ativo');
-                }else{
+                } else {
                     labelDuvidas.classList.toggle('btn-apertado');
                 }
                 duvidas.classList.toggle('menu-aberto');
             }
             return;
-        } 
+        }
         if (obj === inputServiços) {
             remover(artigos, labelArtigos, duvidas, labelDuvidas);
-            if (window.innerWidth < 800){
+            if (window.innerWidth < 800) {
                 setTimeout(() => {
                     labelServiços.classList.toggle('menu-item-ativo');
                     servicos.classList.toggle('menu-aberto');
                 }, 700);
-            } else{
+            } else {
                 labelServiços.classList.toggle('btn-apertado');
                 servicos.classList.toggle('menu-aberto');
             }
         } else if (obj === inputArtigos) {
             remover(servicos, labelServiços, duvidas, labelDuvidas);
-            if (window.innerWidth < 800){
+            if (window.innerWidth < 800) {
                 setTimeout(() => {
                     labelArtigos.classList.toggle('menu-item-ativo');
                     artigos.classList.toggle('menu-aberto');
                 }, 700);
-            } else{
+            } else {
                 labelArtigos.classList.toggle('btn-apertado');
                 artigos.classList.toggle('menu-aberto');
             }
         } else if (obj === inputDuvidas) {
             remover(servicos, labelServiços, artigos, labelArtigos);
-            if (window.innerWidth < 800){
+            if (window.innerWidth < 800) {
                 setTimeout(() => {
                     labelDuvidas.classList.toggle('menu-item-ativo');
                     duvidas.classList.toggle('menu-aberto');
                 }, 700);
-            } else{
+            } else {
                 labelDuvidas.classList.toggle('btn-apertado');
                 duvidas.classList.toggle('menu-aberto');
             }
         }
-        
+
     } else {
         const itemAberto = verificaInfoAberta();
         itemAberto.parentElement.classList.remove('btn-apertado');
@@ -155,32 +155,32 @@ function expandir(obj) {
             }, 1000);
         });
         esperarRecolherInfo().then(() => {
-                if (obj === inputServiços) {
-                    if (window.innerWidth < 800){
-                        labelServiços.classList.toggle('menu-item-ativo');
-                    }else{
-                        labelServiços.classList.toggle('btn-apertado');
-                    }
-                    servicos.classList.toggle('menu-aberto');
-                    console.log(window.innerWidth);
-                } else if (obj === inputArtigos) {
-                    if (window.innerWidth < 800){
-                        labelArtigos.classList.toggle('menu-item-ativo');
-                    }else{
-                        labelArtigos.classList.toggle('btn-apertado');
-                    }
-                    artigos.classList.toggle('menu-aberto');
-                } else if (obj === inputDuvidas) {
-                    if (window.innerWidth < 800){
-                        labelDuvidas.classList.toggle('menu-item-ativo');
-                    }else{
-                        labelDuvidas.classList.toggle('btn-apertado');
-                    }
-                    duvidas.classList.toggle('menu-aberto');
+            if (obj === inputServiços) {
+                if (window.innerWidth < 800) {
+                    labelServiços.classList.toggle('menu-item-ativo');
+                } else {
+                    labelServiços.classList.toggle('btn-apertado');
                 }
-                return;
+                servicos.classList.toggle('menu-aberto');
+                console.log(window.innerWidth);
+            } else if (obj === inputArtigos) {
+                if (window.innerWidth < 800) {
+                    labelArtigos.classList.toggle('menu-item-ativo');
+                } else {
+                    labelArtigos.classList.toggle('btn-apertado');
+                }
+                artigos.classList.toggle('menu-aberto');
+            } else if (obj === inputDuvidas) {
+                if (window.innerWidth < 800) {
+                    labelDuvidas.classList.toggle('menu-item-ativo');
+                } else {
+                    labelDuvidas.classList.toggle('btn-apertado');
+                }
+                duvidas.classList.toggle('menu-aberto');
+            }
+            return;
         });
-    }   
+    }
 }
 
 function expandirMenu() {
@@ -347,12 +347,12 @@ sliderPrincipal.mount();
 
 const configSliderArtigos = {
     type: 'carousel',
-    gap:0,
-    /* autoplay: 6000, */
-    perView:2,
+    gap: 0,
+    autoplay: 6000,
+    perView: 2,
     breakpoints: {
-        1200:{
-            perView:1
+        1200: {
+            perView: 1
         }
     }
 };

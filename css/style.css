@@ -1415,7 +1415,7 @@
                 text-transform: uppercase;
             }
             
-            footer>.info>img {
+            footer .info img {
                 margin-top: 30px;
                 margin-bottom: 10px;
                 height: 40px;
@@ -1660,7 +1660,7 @@
                 .box-serviços {
                     width: 45%;
                     margin: unset;
-                    min-height: 400px;
+                    min-height: 450px;
                 }
                 .box-texto {
                     height: 130px;
@@ -1834,5 +1834,20 @@
                 }
                 #consulta form {
                     width: 50%;
+                }
+                #todos-artigos {
+                    margin-top: -17px;
+                }
+                .info {
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .footer-divisor {
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                    -o-transform: rotate(90deg);
                 }
             }
