@@ -1605,9 +1605,6 @@
                 h2 {
                     font-size: 30px;
                 }
-                .sobre>p {
-                    font-size: 20px;
-                }
                 #tipos-atendimento {
                     flex-direction: row;
                     flex-wrap: wrap;
@@ -1618,9 +1615,6 @@
                 .box-tipos-atendimento {
                     width: 45%;
                     margin: unset;
-                }
-                .box-tipos-atendimento>p {
-                    font-size: 18px;
                 }
                 .box-tipos-atendimento>img {
                     width: unset;
@@ -1633,10 +1627,10 @@
                     font-size: 25px;
                 }
                 #divisor-diferenciais>h2>strong {
-                    font-size: 40px;
+                    font-size: 35px;
                 }
                 .título-diferenciais {
-                    font-size: 40px;
+                    font-size: 35px;
                 }
                 .box-diferenciais>p,
                 #copy-artigos>p,
@@ -1666,11 +1660,11 @@
                 .box-serviços {
                     width: 45%;
                     margin: unset;
+                    min-height: 400px;
                 }
                 .box-texto {
                     height: 130px;
                 }
-                .box-texto>h3,
                 .form-contato>h3 {
                     font-size: 30px;
                 }
@@ -1683,6 +1677,10 @@
                 .box-artigos {
                     margin: 8px auto;
                     width: 490px;
+                    min-height: 500px;
+                }
+                #consulta p {
+                    font-size: 20px;
                 }
                 .slider-artigos {
                     margin-top: 5%;
