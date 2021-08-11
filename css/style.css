@@ -1389,12 +1389,12 @@
             .div-logo {
                 padding: 25px 0;
                 background-color: #333333;
-                margin-bottom: 484px;
+                margin-bottom: 530px;
             }
             
             .info {
                 position: fixed;
-                height: 484px;
+                height: 530px;
                 bottom: 0;
                 z-index: -1;
                 background-color: #696969;
@@ -1451,6 +1451,10 @@
             
             #tipos-atendimento {
                 margin: 0 auto;
+            }
+            
+            .info>.coluna:first-child {
+                padding-top: 15px;
             }
             /*media queries*/
             /*Tablet*/
