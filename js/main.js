@@ -26,17 +26,17 @@ const btnsSaiba = document.querySelectorAll('.btnSaiba');
 // Captura de evento dos botões saiba mais
 for (let btn of btnsSaiba) {
     btn.parentElement.addEventListener('mouseenter', e => {
-        if (window.innerWidth < 800) {
+        if (window.innerWidth < 1200) {
             btn.innerHTML = "Mais detalhes";
         }
     });
     btn.parentElement.addEventListener('mouseleave', e => {
-        if (window.innerWidth < 800) {
+        if (window.innerWidth < 1200) {
             btn.innerHTML = "Saiba mais";
         }
     });
     btn.addEventListener('click', e => {
-        if (window.innerWidth < 800) {
+        if (window.innerWidth < 1200) {
             if (e.target.parentElement.offsetHeight > 300) {
                 window.open('servicos.html', '_self');
                 e.target.innerHTML = "Saiba mais";

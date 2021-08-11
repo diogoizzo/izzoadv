@@ -780,7 +780,7 @@
                 background-color: rgb(217, 217, 217);
                 box-shadow: 0px 7px 8px 0px rgba(179, 179, 179, 0.35), -3.536px -3.536px 6.4px 1.6px rgba(255, 253, 253, 0.36);
                 margin: 0 auto 8% auto;
-                min-height: 360px;
+                min-height: 430px;
                 width: 90%;
                 z-index: 99;
                 -webkit-border-radius: 22px;
@@ -1844,10 +1844,20 @@
                     align-items: center;
                 }
                 .footer-divisor {
-                    transform: rotate(90deg);
-                    -webkit-transform: rotate(90deg);
-                    -moz-transform: rotate(90deg);
-                    -ms-transform: rotate(90deg);
-                    -o-transform: rotate(90deg);
+                    width: 1px;
+                    height: 80%;
+                    margin-top: unset;
+                }
+                #img-curtir {
+                    display: inline-block;
+                }
+                .div-logo {
+                    margin-bottom: 240px;
+                }
+                .info {
+                    height: 240px;
+                }
+                .links-curtir {
+                    padding: 0 15%;
                 }
             }
