@@ -21,6 +21,9 @@ const btnMenu = document.querySelector('.btn-menu-mobile');
 const header = document.querySelector('header');
 const slider = document.querySelector('.slider');
 const btnsSaiba = document.querySelectorAll('.btnSaiba');
+const nav = document.querySelector('.menu-container');
+const logo = document.querySelector('.logo');
+const espacoLogo = document.querySelector('#entra-logo');
 // Fim da captura de Dom
 // Eventos
 // Captura de evento dos botões saiba mais
@@ -43,6 +46,24 @@ for (let btn of btnsSaiba) {
             }
         }
     });
+}
+// fixa o menu na versão desktop
+if (window.innerWidth > 1200) {
+    let distanciaNav = nav.offsetTop;
+    window.onscroll = () => {
+        console.log(logo.style.top);
+        const menu = document.querySelector('.menu-items');
+        if (window.pageYOffset >= distanciaNav) {
+            nav.classList.add("nav-fixo");
+            logo.style.top = '-1px';
+
+            menu.style.borderRadius = '0px 0px 15px 15px';
+        } else {
+            nav.classList.remove("nav-fixo");
+            logo.style.top = '4px';
+            menu.style.borderRadius = '15px 15px 15px 15px';
+        }
+    }
 }
 
 //menu

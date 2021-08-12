@@ -130,12 +130,13 @@
             
             .logo {
                 justify-content: center;
-                z-index: 1;
+                z-index: 999;
             }
             
             .logo img {
                 width: 50px;
                 min-width: 50px;
+                z-index: 999;
             }
             
             .links-de-redes-sociais {
@@ -187,6 +188,10 @@
                 -moz-border-radius: 0 0 15px 15px;
                 -ms-border-radius: 0 0 15px 15px;
                 -o-border-radius: 0 0 15px 15px;
+            }
+            
+            #entra-logo {
+                display: none;
             }
             
             .btn-menu-mobile {
@@ -1496,7 +1501,7 @@
                     padding-top: 10px;
                     gap: 2%;
                     position: relative;
-                    z-index: 999;
+                    z-index: 900;
                     flex-direction: row;
                     justify-content: center;
                     align-items: flex-start;
@@ -1579,7 +1584,7 @@
                 .menu-container {
                     box-shadow: 3.277px 2.294px 3.92px 0.08px rgb(0 0 0 / 9%), -2.828px -2.828px 3.92px 0.08px rgb(255 253 253 / 40%);
                     position: relative;
-                    z-index: 999;
+                    z-index: 901;
                     margin-top: -25px;
                     border-radius: 15px 15px 15px 15px;
                     -webkit-border-radius: 15px 15px 15px 15px;
@@ -1863,5 +1868,88 @@
                 }
                 .links-curtir {
                     padding: 0 15%;
+                }
+                .menu-items {
+                    justify-content: space-between;
+                    position: relative;
+                    z-index: 901;
+                }
+                nav li {
+                    max-width: 230px;
+                }
+                .links-de-redes-sociais>.redondo {
+                    margin-left: -2%;
+                }
+                .redondo>img {
+                    width: 65%;
+                }
+                .links-de-contato>.redondo {
+                    margin-left: 6%;
+                    margin-right: -2%;
+                }
+                .menu-fixo {
+                    position: relative;
+                    z-index: 900;
+                }
+                .logo {
+                    position: fixed;
+                    top: 4px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
+                    -moz-transform: translateX(-50%);
+                    -ms-transform: translateX(-50%);
+                    -o-transform: translateX(-50%);
+                    z-index: 999;
+                }
+                .logo>img {
+                    position: relative;
+                    z-index: 999;
+                }
+                .links {
+                    margin-top: 17px;
+                }
+                #entra-logo {
+                    display: inline-block;
+                    position: relative;
+                    border: none;
+                    width: 180px;
+                    z-index: 900;
+                }
+                nav {
+                    position: relative;
+                    margin-top: 0;
+                    z-index: 900;
+                }
+                .menu-container {
+                    margin-top: 10px;
+                }
+                .nav-fixo {
+                    margin-top: 0;
+                    position: fixed;
+                    top: 0;
+                    width: 100%;
+                    z-index: 899;
+                }
+                .nav-fixo>.menu-items {
+                    border-radius: 0 0 0 0;
+                    -webkit-border-radius: 0 0 0 0;
+                    -moz-border-radius: 0 0 0 0;
+                    -ms-border-radius: 0 0 0 0;
+                    -o-border-radius: 0 0 0 0;
+                }
+                .links-social-contato {
+                    z-index: 999;
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                    height: 58px;
+                }
+                .slider-principal {
+                    margin-top: 30px;
                 }
             }
