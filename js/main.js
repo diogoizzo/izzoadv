@@ -49,20 +49,36 @@ for (let btn of btnsSaiba) {
 }
 // fixa o menu na versão desktop
 if (window.innerWidth > 1200) {
+    const espaçoLogo= document.querySelector('#entra-logo');
+    let percentualTop;
+    let larguraLogo;
+    let margin;
     let distanciaNav = nav.offsetTop;
     window.onscroll = () => {
-        console.log(logo.style.top);
-        const menu = document.querySelector('.menu-items');
-        if (window.pageYOffset >= distanciaNav) {
-            nav.classList.add("nav-fixo");
-            logo.style.top = '-1px';
-
-            menu.style.borderRadius = '0px 0px 15px 15px';
-        } else {
-            nav.classList.remove("nav-fixo");
-            logo.style.top = '4px';
-            menu.style.borderRadius = '15px 15px 15px 15px';
-        }
+        if (window.innerWidth > 1200){
+            const menu = document.querySelector(".menu-items");
+            if (window.pageYOffset >= distanciaNav) {
+              nav.classList.add("nav-fixo");
+              logo.style.top = "-1px";
+              menu.style.borderRadius = "0px 0px 15px 15px";
+              espacoLogo.style.width = "150px";
+            } else {
+              nav.classList.remove("nav-fixo");
+              logo.style.top = "4px";
+              menu.style.borderRadius = "15px 15px 15px 15px";
+              percentualTop = (100 * window.pageYOffset) / 68;
+              larguraLogo = (percentualTop * 150) / 100;
+              margin = percentualTop / 100;
+              espacoLogo.style.width = `${larguraLogo}px`;
+              if (window.pageYOffset > 24) {
+                espacoLogo.style.display = "inline-block";
+              } else {
+                espacoLogo.style.display = "none";
+              }
+            }
+        }else{
+            espacoLogo.style.display = "none";
+        }     
     }
 }
 
@@ -103,6 +119,19 @@ function recolherMenu() {
     imgMenu.src = "./img/menu.svg";
 }
 
+function preparaFechamento (obj){
+    function handleLeave(){
+        obj.classList.remove("menu-aberto");
+        obj.parentElement.removeEventListener("mouseleave", handleLeave);
+        setTimeout(()=> {
+            obj.previousSibling.previousSibling.classList.remove("btn-apertado");
+        }, 600);
+    }
+    if (window.innerWidth > 1200){
+        obj.parentElement.addEventListener("mouseleave", handleLeave);
+    }
+}
+
 function expandir(obj) {
     if (!informacoes.classList.contains('informacoes-aberto')) {
         if (!servicos.classList.contains('menu-aberto') && !artigos.classList.contains('menu-aberto') && !duvidas.classList.contains('menu-aberto')) {
@@ -113,7 +142,7 @@ function expandir(obj) {
                     labelServiços.classList.toggle('btn-apertado');
                 }
                 servicos.classList.toggle('menu-aberto');
-                console.log(window.innerWidth);
+                preparaFechamento(servicos);
             } else if (obj === inputArtigos) {
                 if (window.innerWidth < 800) {
                     labelArtigos.classList.toggle('menu-item-ativo');
@@ -121,6 +150,7 @@ function expandir(obj) {
                     labelArtigos.classList.toggle('btn-apertado');
                 }
                 artigos.classList.toggle('menu-aberto');
+                preparaFechamento(artigos);
             } else if (obj === inputDuvidas) {
                 if (window.innerWidth < 800) {
                     labelDuvidas.classList.toggle('menu-item-ativo');
@@ -128,6 +158,7 @@ function expandir(obj) {
                     labelDuvidas.classList.toggle('btn-apertado');
                 }
                 duvidas.classList.toggle('menu-aberto');
+                preparaFechamento(duvidas);
             }
             return;
         }
@@ -141,6 +172,7 @@ function expandir(obj) {
             } else {
                 labelServiços.classList.toggle('btn-apertado');
                 servicos.classList.toggle('menu-aberto');
+                preparaFechamento(servicos);
             }
         } else if (obj === inputArtigos) {
             remover(servicos, labelServiços, duvidas, labelDuvidas);
@@ -152,6 +184,7 @@ function expandir(obj) {
             } else {
                 labelArtigos.classList.toggle('btn-apertado');
                 artigos.classList.toggle('menu-aberto');
+                preparaFechamento(artigos);
             }
         } else if (obj === inputDuvidas) {
             remover(servicos, labelServiços, artigos, labelArtigos);
@@ -163,6 +196,7 @@ function expandir(obj) {
             } else {
                 labelDuvidas.classList.toggle('btn-apertado');
                 duvidas.classList.toggle('menu-aberto');
+                preparaFechamento(duvidas);
             }
         }
 
@@ -173,7 +207,7 @@ function expandir(obj) {
             informacoes.classList.remove('informacoes-aberto');
             setTimeout(() => {
                 resolve();
-            }, 1000);
+            }, 100);
         });
         esperarRecolherInfo().then(() => {
             if (obj === inputServiços) {
@@ -183,7 +217,7 @@ function expandir(obj) {
                     labelServiços.classList.toggle('btn-apertado');
                 }
                 servicos.classList.toggle('menu-aberto');
-                console.log(window.innerWidth);
+                preparaFechamento(servicos);
             } else if (obj === inputArtigos) {
                 if (window.innerWidth < 800) {
                     labelArtigos.classList.toggle('menu-item-ativo');
@@ -191,6 +225,7 @@ function expandir(obj) {
                     labelArtigos.classList.toggle('btn-apertado');
                 }
                 artigos.classList.toggle('menu-aberto');
+                preparaFechamento(artigos);
             } else if (obj === inputDuvidas) {
                 if (window.innerWidth < 800) {
                     labelDuvidas.classList.toggle('menu-item-ativo');
@@ -198,6 +233,7 @@ function expandir(obj) {
                     labelDuvidas.classList.toggle('btn-apertado');
                 }
                 duvidas.classList.toggle('menu-aberto');
+                preparaFechamento(duvidas);
             }
             return;
         });

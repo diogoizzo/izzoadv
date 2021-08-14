@@ -1303,7 +1303,7 @@
                 margin: 0 auto;
                 text-align: left;
                 margin-bottom: 5px;
-                color: #333333;
+                color: #000000;
             }
             
             .form-contato>select {
@@ -1370,7 +1370,7 @@
                 -ms-border-radius: 10vw;
                 -o-border-radius: 10vw;
                 background-color: rgb(113, 24, 23);
-                box-shadow: 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.2), -3.536px -3.536px 4.55px 0.45px rgba(255, 253, 253, 0.35);
+                box-shadow: 0px 5px 4.75px 0.25px rgba(0, 0, 0, 0.2);
                 -webkit-border-radius: 10vw;
             }
             
@@ -1572,8 +1572,16 @@
                     -o-border-radius: 0 0 15px 15px;
                 }
                 .redondo {
-                    height: 28px;
-                    width: 28px;
+                    height: 27px;
+                    width: 51px;
+                    border-radius: 32px;
+                    -webkit-border-radius: 32px;
+                    -moz-border-radius: 32px;
+                    -ms-border-radius: 32px;
+                    -o-border-radius: 32px;
+                }
+                .redondo>img{
+                    height: 16px;
                 }
                 .informações {
                     margin-top: -15px;
@@ -1762,10 +1770,6 @@
                 .controles {
                     max-width: unset;
                 }
-                .redondo {
-                    height: 32px;
-                    width: 32px;
-                }
                 .box-tipos-atendimento {
                     width: 22%;
                     padding: 30px;
@@ -1813,7 +1817,7 @@
                 .box-artigos {
                     margin-top: 15px;
                     width: 85%;
-                    max-width: 520px;
+                    max-width: 480px;
                 }
                 .glide__arrow--left {
                     left: -165px;
@@ -1875,13 +1879,10 @@
                     z-index: 901;
                 }
                 nav li {
-                    max-width: 230px;
+                    max-width: 250px;
                 }
                 .links-de-redes-sociais>.redondo {
                     margin-left: -2%;
-                }
-                .redondo>img {
-                    width: 65%;
                 }
                 .links-de-contato>.redondo {
                     margin-left: 6%;
@@ -1910,10 +1911,10 @@
                     margin-top: 17px;
                 }
                 #entra-logo {
-                    display: inline-block;
+                    display: none;
                     position: relative;
                     border: none;
-                    width: 180px;
+                    width: 0px;
                     z-index: 900;
                 }
                 nav {
@@ -1951,5 +1952,15 @@
                 }
                 .slider-principal {
                     margin-top: 30px;
+                }
+                #divisor-diferenciais{
+                    padding: 2%;
+                }
+                #copy-artigos{
+                    padding: 2%;
+                    margin-top: 3%;
+                }
+                #sc-consulta{
+                    background-position-y: 15%;
                 }
             }
